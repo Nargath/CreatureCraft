@@ -48,10 +48,10 @@ Anyone can cook creature components - there are no recipes to learn or discover.
 
 ### Degrees of Success
 
-**Critical Success:** Create 2 servings
-**Success:** Create 1 serving
-**Failure:** Components consumed, no result
-**Critical Failure:** Components destroyed + Sickened 1 for 1 hour
+- **Critical Success:** Create 2 servings
+- **Success:** Create 1 serving
+- **Failure:** Components consumed, no result
+- **Critical Failure:** Components destroyed + Sickened 1 for 1 hour
 
 ---
 
@@ -69,9 +69,9 @@ Anyone can cook creature components - there are no recipes to learn or discover.
 
 ### Examples
 
-**[Fire 5] Sustenance:** Fire resistance 5 for 5 hours
-**[Fire 12] Enhancement:** +2 Reflex saves for 360 minutes (6 hours)
-**[Flight 8] Utility:** 20-foot fly speed for 240 minutes (4 hours)
+- **[Fire 5] Sustenance:** Fire resistance 5 for 5 hours
+- **[Fire 12] Enhancement:** +2 Reflex saves for 360 minutes (6 hours)
+- **[Flight 8] Utility:** 20-foot fly speed for 240 minutes (4 hours)
 
 ---
 
@@ -332,9 +332,9 @@ Effects are determined by recipe category, NOT tag level:
 
 Some tags require careful handling:
 
-**[Fire/Lightning]:** Failure = 1d6 energy damage
-**[Venom]:** Failure = Sickened 1 (blocks further cooking)
-**[Magical]:** Failure = Stupefied 1 for 10 minutes
+- **[Fire/Lightning]:** Failure = 1d6 energy damage
+- **[Venom]:** Failure = Sickened 1 (blocks further cooking)
+- **[Magical]:** Failure = Stupefied 1 for 10 minutes
 
 Professional tools reduce failure consequences by one step.
 
