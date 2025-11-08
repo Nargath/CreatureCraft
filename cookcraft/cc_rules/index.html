@@ -1,0 +1,1995 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Nargath">
+      
+      
+        <link rel="canonical" href="https://nargath.github.io/CreatureCraft/cookcraft/cc_rules/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../cc_essence_powers_qr/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>CookCraft SubSystem - CreatureCraft</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cookcraft-subsystem" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="CreatureCraft" class="md-header__button md-logo" aria-label="CreatureCraft" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CreatureCraft
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CookCraft SubSystem
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/nargath/CreatureCraft" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CreatureCraft
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  Cookcraft
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../harvestcraft/" class="md-tabs__link">
+          
+  
+  HarvestCraft
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CreatureCraft" class="md-nav__button md-logo" aria-label="CreatureCraft" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    CreatureCraft
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/nargath/CreatureCraft" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CreatureCraft
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Cookcraft
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Cookcraft
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Rules
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Rules
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-cookcraft" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is CookCraft?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-mechanics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Mechanics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Mechanics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#difficulty-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      Difficulty Class
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skills
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#degrees-of-success" class="md-nav__link">
+    <span class="md-ellipsis">
+      Degrees of Success
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duration-and-effect-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duration and Effect Scaling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Duration and Effect Scaling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Principle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duration-by-category" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duration by Category
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-cookcraft-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How CookCraft Works
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How CookCraft Works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-simple-truth" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Simple Truth
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Rules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-cooking-by-category" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Cooking by Category
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-doesnt-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Doesn't Work
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recipe-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recipe Categories
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recipe Categories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sustenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sustenance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enhancement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utility
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Component Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-basic-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Basic Formula
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mundane-components-food-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mundane Components &amp; Food Forms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-cooking-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Cooking Requirements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-and-equipment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time and Equipment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Time and Equipment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cooking-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cooking Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#equipment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equipment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#food-form-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Food Form Limitations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effect-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effect Guidelines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Effect Guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed-effect-magnitudes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fixed Effect Magnitudes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stacking-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stacking Rules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-recipes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Recipes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Recipes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wolf-pack-jerky" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wolf Pack Jerky
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drake-fire-roast" class="md-nav__link">
+    <span class="md-ellipsis">
+      Drake Fire Roast
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#harpy-wing-stew" class="md-nav__link">
+    <span class="md-ellipsis">
+      Harpy Wing Stew
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#party-protection-soup-batch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Party Protection Soup (Batch)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dangerous-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dangerous Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#with-harvestcraft" class="md-nav__link">
+    <span class="md-ellipsis">
+      With HarvestCraft
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-hindercraft" class="md-nav__link">
+    <span class="md-ellipsis">
+      With HinderCraft
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#economic-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      Economic Value
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Reference
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recipe-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recipe Planning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duration-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duration Formula
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-cooking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Cooking
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cc_essence_powers_qr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Essence Powers (Quick Reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    HarvestCraft
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            HarvestCraft
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../harvestcraft/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../harvestcraft/hc_rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-cookcraft" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is CookCraft?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-mechanics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Mechanics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Mechanics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#difficulty-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      Difficulty Class
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skills
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#degrees-of-success" class="md-nav__link">
+    <span class="md-ellipsis">
+      Degrees of Success
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duration-and-effect-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duration and Effect Scaling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Duration and Effect Scaling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Principle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duration-by-category" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duration by Category
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-cookcraft-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How CookCraft Works
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How CookCraft Works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-simple-truth" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Simple Truth
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Rules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-cooking-by-category" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Cooking by Category
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-doesnt-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Doesn't Work
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recipe-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recipe Categories
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recipe Categories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sustenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sustenance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enhancement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utility" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utility
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Component Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Component Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-basic-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Basic Formula
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mundane-components-food-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mundane Components &amp; Food Forms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-cooking-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Cooking Requirements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-and-equipment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time and Equipment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Time and Equipment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cooking-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cooking Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#equipment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equipment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#food-form-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Food Form Limitations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effect-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effect Guidelines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Effect Guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixed-effect-magnitudes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fixed Effect Magnitudes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stacking-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stacking Rules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-recipes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Recipes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Recipes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wolf-pack-jerky" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wolf Pack Jerky
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drake-fire-roast" class="md-nav__link">
+    <span class="md-ellipsis">
+      Drake Fire Roast
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#harpy-wing-stew" class="md-nav__link">
+    <span class="md-ellipsis">
+      Harpy Wing Stew
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#party-protection-soup-batch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Party Protection Soup (Batch)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dangerous-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dangerous Components
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#with-harvestcraft" class="md-nav__link">
+    <span class="md-ellipsis">
+      With HarvestCraft
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-hindercraft" class="md-nav__link">
+    <span class="md-ellipsis">
+      With HinderCraft
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#economic-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      Economic Value
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Reference
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recipe-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recipe Planning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duration-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duration Formula
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-cooking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Cooking
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/nargath/CreatureCraft/edit/master/docs/cookcraft/cc_rules.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="cookcraft-subsystem">CookCraft Subsystem<a class="headerlink" href="#cookcraft-subsystem" title="Permanent link">&para;</a></h1>
+<p><em>Creature Component Cuisine</em></p>
+<hr />
+<h2 id="what-is-cookcraft">What Is CookCraft?<a class="headerlink" href="#what-is-cookcraft" title="Permanent link">&para;</a></h2>
+<p>CookCraft transforms harvested creature components into temporary consumables. Unlike permanent crafting or complex alchemy, CookCraft provides short-term benefits that support adventure activities through simple cooking mechanics.</p>
+<p><strong>Key Benefits:</strong></p>
+<ul>
+<li>Convert creature materials into beneficial consumables</li>
+<li>Recipe categories determine how tag powers manifest</li>
+<li>Prepare for adventures with environmental protection, performance boosts, and special capabilities</li>
+<li>Create economic value from harvested materials</li>
+</ul>
+<p><strong>No Recipe Requirements:</strong>
+Anyone can cook creature components - there are no recipes to learn or discover. The knowledge is simply choosing which category effect you want from your component. A [Fire] component can provide fire protection (Sustenance), improved reflexes (Enhancement), or ignition capability (Utility) based on how you prepare it.</p>
+<hr />
+<h2 id="core-mechanics">Core Mechanics<a class="headerlink" href="#core-mechanics" title="Permanent link">&para;</a></h2>
+<h3 id="basic-process">Basic Process<a class="headerlink" href="#basic-process" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Choose Recipe:</strong> Select category and food form</li>
+<li><strong>Gather Components:</strong> One special + appropriate mundane components</li>
+<li><strong>Make Check:</strong> Roll Survival or Crafting vs DC</li>
+<li><strong>Cook Time:</strong> 30 minutes (field) or 1 hour (camp)</li>
+<li><strong>Results:</strong> Create consumables based on success</li>
+</ol>
+<h3 id="difficulty-class">Difficulty Class<a class="headerlink" href="#difficulty-class" title="Permanent link">&para;</a></h3>
+<p><strong>DC = 14 + Tag Level</strong></p>
+<ul>
+<li><strong>Tag Level:</strong> From the special component used (0 for mundane-only)</li>
+<li><strong>Batch Cooking:</strong> +2 DC per additional serving beyond the first</li>
+</ul>
+<h3 id="skills">Skills<a class="headerlink" href="#skills" title="Permanent link">&para;</a></h3>
+<p><strong>Choose based on approach:</strong></p>
+<ul>
+<li><strong>Survival:</strong> Traditional cooking, field preparation, natural methods</li>
+<li><strong>Crafting:</strong> Technical precision, equipment usage, refined techniques</li>
+</ul>
+<h3 id="degrees-of-success">Degrees of Success<a class="headerlink" href="#degrees-of-success" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Critical Success:</strong> Create 2 servings</li>
+<li><strong>Success:</strong> Create 1 serving</li>
+<li><strong>Failure:</strong> Components consumed, no result</li>
+<li><strong>Critical Failure:</strong> Components destroyed + Sickened 1 for 1 hour</li>
+</ul>
+<hr />
+<h2 id="duration-and-effect-scaling">Duration and Effect Scaling<a class="headerlink" href="#duration-and-effect-scaling" title="Permanent link">&para;</a></h2>
+<h3 id="core-principle">Core Principle<a class="headerlink" href="#core-principle" title="Permanent link">&para;</a></h3>
+<p><strong>Effect magnitude is fixed by recipe category.</strong> Higher tag levels provide longer duration, not stronger effects.</p>
+<h3 id="duration-by-category">Duration by Category<a class="headerlink" href="#duration-by-category" title="Permanent link">&para;</a></h3>
+<p><strong>Base duration multiplied by tag level:</strong></p>
+<ul>
+<li><strong>Sustenance:</strong> 1 hour x tag level (max 24 hours)</li>
+<li><strong>Enhancement:</strong> 30 minutes x tag level (max 10 hours)</li>
+<li><strong>Utility:</strong> 30 minutes x tag level (max 10 hours)</li>
+</ul>
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>[Fire 5] Sustenance:</strong> Fire resistance 5 for 5 hours</li>
+<li><strong>[Fire 12] Enhancement:</strong> +2 Reflex saves for 360 minutes (6 hours)</li>
+<li><strong>[Flight 8] Utility:</strong> 20-foot fly speed for 240 minutes (4 hours)</li>
+</ul>
+<hr />
+<h2 id="how-cookcraft-works">How CookCraft Works<a class="headerlink" href="#how-cookcraft-works" title="Permanent link">&para;</a></h2>
+<h3 id="the-simple-truth">The Simple Truth<a class="headerlink" href="#the-simple-truth" title="Permanent link">&para;</a></h3>
+<p><strong>[Special Component] + [Mundane Components] + [Category] = Effect</strong></p>
+<p>There are no complex recipes to learn. If you have a [Fire] component and some meat, you can cook it. The category you choose (Sustenance, Enhancement, Utility) determines what benefit you get from that [Fire] essence.</p>
+<h3 id="core-rules">Core Rules<a class="headerlink" href="#core-rules" title="Permanent link">&para;</a></h3>
+<p><strong>One Component, One Effect:</strong></p>
+<ul>
+<li>Each recipe uses ONE special component</li>
+<li>Adding more special components doesn't enhance the effect</li>
+<li>Save extra components for additional meals</li>
+</ul>
+<h3 id="batch-cooking-by-category">Batch Cooking by Category<a class="headerlink" href="#batch-cooking-by-category" title="Permanent link">&para;</a></h3>
+<p><strong>Utility Recipes:</strong> </p>
+<ul>
+<li>Always single-serving</li>
+<li>Special capabilities are personal (can't share fly speed or invisibility)</li>
+<li>Perfect for using low-level components</li>
+</ul>
+<p><strong>Enhancement/Sustenance Recipes:</strong></p>
+<ul>
+<li>Can split duration among multiple servings</li>
+<li>Example: [Fire 12] Enhancement = 120 min solo OR 40 min for 3 people</li>
+<li>DC increases by +2 per additional serving</li>
+</ul>
+<h3 id="what-doesnt-work">What Doesn't Work<a class="headerlink" href="#what-doesnt-work" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[Fire 5] + [Fire 5] &rarr; [Fire 10] effect</li>
+<li>[Fire 5] + [Sharp 3] &rarr; both effects at once</li>
+<li>Multiple components don't stack or enhance</li>
+</ul>
+<hr />
+<h2 id="recipe-categories">Recipe Categories<a class="headerlink" href="#recipe-categories" title="Permanent link">&para;</a></h2>
+<p>Recipe categories are simply different ways to prepare components. The same [Fire] component can be cooked three different ways, each extracting a different benefit from its essence:</p>
+<h3 id="sustenance">Sustenance<a class="headerlink" href="#sustenance" title="Permanent link">&para;</a></h3>
+<p><em>Slow-cooked for lasting nourishment</em></p>
+<p><strong>Tag Interpretations (Fixed Effects):</strong></p>
+<ul>
+<li><strong>[Fire]</strong> &rarr; Fire resistance 5</li>
+<li><strong>[Cold]</strong> &rarr; Cold resistance 5</li>
+<li><strong>[Acid]</strong> &rarr; Acid resistance 5</li>
+<li><strong>[Lightning]</strong> &rarr; Lightning resistance 5</li>
+<li><strong>[Sonic]</strong> &rarr; Sonic resistance 5</li>
+<li><strong>[Venom]</strong> &rarr; Poison resistance 5</li>
+<li><strong>[Vision]</strong> &rarr; Reduce light/dark penalties by 1 step</li>
+<li><strong>[Sense]</strong> &rarr; Sentinel Awareness (secret check after 10 min)</li>
+<li><strong>[Regeneration]</strong> &rarr; Remove wounded (1 min after combat)</li>
+<li><strong>[Mundane]</strong> &rarr; Basic nutrition and fatigue removal</li>
+</ul>
+<p><strong>Duration:</strong> 1 hour x tag level (max 24 hours)
+<strong>Example:</strong> [Fire 5] Sustenance = Fire resistance 5 for 5 hours</p>
+<h3 id="enhancement">Enhancement<a class="headerlink" href="#enhancement" title="Permanent link">&para;</a></h3>
+<p><em>Prepared to boost abilities</em></p>
+<p><strong>Tag Interpretations (Fixed Effects):</strong></p>
+<ul>
+<li><strong>[Fire]</strong> &rarr; +2 circumstance bonus to Reflex saves</li>
+<li><strong>[Cold]</strong> &rarr; +1 status bonus to AC</li>
+<li><strong>[Acid]</strong> &rarr; +2 circumstance bonus to Fortitude saves</li>
+<li><strong>[Lightning]</strong> &rarr; +1 status bonus to Initiative</li>
+<li><strong>[Sonic]</strong> &rarr; +2 circumstance bonus to Performance &amp; Intimidation</li>
+<li><strong>[Venom]</strong> &rarr; +2 circumstance bonus to Fortitude saves vs poison</li>
+<li><strong>[Sharp]</strong> &rarr; +1 item bonus to attack rolls</li>
+<li><strong>[Vision]</strong> &rarr; +2 circumstance bonus to Perception (visual)</li>
+<li><strong>[Flight]</strong> &rarr; +2 circumstance bonus to Acrobatics</li>
+<li><strong>[Magical]</strong> &rarr; +1 circumstance bonus to spell DCs &amp; attacks</li>
+</ul>
+<p><strong>Duration:</strong> 30 minutes x tag level (max 10 hours)
+<strong>Example:</strong> [Sharp 8] Enhancement = +1 to attacks for 240 minutes (4 hours)</p>
+<h3 id="utility">Utility<a class="headerlink" href="#utility" title="Permanent link">&para;</a></h3>
+<p><em>Prepared to grant special capabilities</em></p>
+<p><strong>Tag Interpretations (Fixed Effects):</strong></p>
+<ul>
+<li><strong>[Fire]</strong> &rarr; Ignite (light fires, melt wax, heat objects)</li>
+<li><strong>[Flight]</strong> &rarr; Gain 20-foot fly speed (hover)</li>
+<li><strong>[Vision]</strong> &rarr; See invisibility</li>
+<li><strong>[Water]</strong> &rarr; Breathe underwater</li>
+<li><strong>[Burrow]</strong> &rarr; Gain 15-foot burrow speed through earth</li>
+<li><strong>[Sharp]</strong> &rarr; Ignore object Hardness up to 5 (non-magical objects)</li>
+<li><strong>[Magical]</strong> &rarr; Read magic (understand magical writing)</li>
+<li><strong>[Venom]</strong> &rarr; Create contact poison (2d4 damage, Fort DC 10+level)</li>
+<li><strong>[Charm]</strong> &rarr; Sustained Charm (1 min setup, maintain conversation)</li>
+</ul>
+<p><strong>Duration:</strong> 30 minutes x tag level (max 10 hours)
+<strong>Example:</strong> [Flight 6] Utility = 20-foot fly speed for 180 minutes</p>
+<p><strong>Note:</strong> Not every tag has a natural Utility application - some components are better suited for Sustenance or Enhancement.</p>
+<hr />
+<h2 id="component-requirements">Component Requirements<a class="headerlink" href="#component-requirements" title="Permanent link">&para;</a></h2>
+<h3 id="the-basic-formula">The Basic Formula<a class="headerlink" href="#the-basic-formula" title="Permanent link">&para;</a></h3>
+<p><strong>Every recipe = [Special Component] + [Mundane Components] + [Category Choice]</strong></p>
+<ul>
+<li>Special component provides the tagged power</li>
+<li>Mundane components make it edible food</li>
+<li>Category choice determines how the power manifests</li>
+</ul>
+<h3 id="special-components">Special Components<a class="headerlink" href="#special-components" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>One per recipe:</strong> Each recipe uses exactly ONE special component</li>
+<li><strong>No stacking:</strong> Additional components don't enhance effects</li>
+<li><strong>Batch cooking:</strong> Enhancement/Sustenance can split duration among servings</li>
+<li><strong>Utility restriction:</strong> Utility recipes are always single-serving (special capabilities cannot be shared)</li>
+<li><strong>Tag mixing:</strong> Cannot mix different special tag types in one recipe</li>
+</ul>
+<h3 id="mundane-components-food-forms">Mundane Components &amp; Food Forms<a class="headerlink" href="#mundane-components-food-forms" title="Permanent link">&para;</a></h3>
+<p>The mundane components you use determine what type of food you make. All forms provide the same mechanical effect but create different narrative experiences:</p>
+<p><strong>Stew/Soup:</strong> [Meat] + [Fat] + [Bone] or [Organs]</p>
+<ul>
+<li>Natural choice for batch cooking</li>
+<li>Camp cooking only (needs pot and time)</li>
+</ul>
+<p><strong>Roast/Grilled:</strong> [Meat] + [Fat]</p>
+<ul>
+<li>Simple and reliable</li>
+<li>Can be field-cooked</li>
+</ul>
+<p><strong>Jerky/Preserved:</strong> [Meat] only</p>
+<ul>
+<li>Takes longer to prepare</li>
+<li>Travels well, good for Sustenance</li>
+</ul>
+<p><strong>Broth/Tonic:</strong> [Bone] + [Organs] or [Blood]</p>
+<ul>
+<li>Light and quick to consume</li>
+</ul>
+<p><strong>Pie/Pastry:</strong> [Meat] + [Fat] + trade goods (flour, etc.)</p>
+<ul>
+<li>Requires civilization supplies</li>
+<li>Impressive for social situations</li>
+</ul>
+<h3 id="batch-cooking-requirements">Batch Cooking Requirements<a class="headerlink" href="#batch-cooking-requirements" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Add 1 mundane component per extra serving</li>
+<li>Example: Stew for 3 people needs 3Ãƒâ€” the mundane components</li>
+</ul>
+<hr />
+<h2 id="time-and-equipment">Time and Equipment<a class="headerlink" href="#time-and-equipment" title="Permanent link">&para;</a></h2>
+<h3 id="cooking-time">Cooking Time<a class="headerlink" href="#cooking-time" title="Permanent link">&para;</a></h3>
+<p><strong>Field Cooking:</strong> 30 minutes</p>
+<ul>
+<li>Quick preparations over open flame</li>
+<li>Limited to simpler food forms (roasts, jerky)</li>
+<li>Requires portable cooking kit</li>
+</ul>
+<p><strong>Camp Cooking:</strong> 1 hour</p>
+<ul>
+<li>Full meal preparation with proper setup</li>
+<li>Enables all food forms (stews, soups, pies)</li>
+<li>Better for batch cooking</li>
+</ul>
+<h3 id="equipment">Equipment<a class="headerlink" href="#equipment" title="Permanent link">&para;</a></h3>
+<p><strong>Portable Cooking Kit</strong> (5 gp, 3 Bulk)</p>
+<ul>
+<li>Basic pots, utensils, portable heat source</li>
+<li>No penalty to checks</li>
+<li>Enables field cooking</li>
+</ul>
+<p><strong>Professional Cooking Tools</strong> (25 gp, 5 Bulk)</p>
+<ul>
+<li>Quality cookware, precision utensils, spices</li>
+<li>+1 item bonus to CookCraft checks</li>
+<li>Makes field cooking more versatile</li>
+</ul>
+<h3 id="food-form-limitations">Food Form Limitations<a class="headerlink" href="#food-form-limitations" title="Permanent link">&para;</a></h3>
+<p>Some food forms require specific conditions:</p>
+<ul>
+<li><strong>Stews/Soups:</strong> Need camp setup and proper pots</li>
+<li><strong>Pies/Pastries:</strong> Require trade goods (flour, etc.)</li>
+<li><strong>Jerky:</strong> Takes longer but can be done while traveling</li>
+<li><strong>Roasts:</strong> Can be field-cooked with basic equipment</li>
+</ul>
+<hr />
+<h2 id="effect-guidelines">Effect Guidelines<a class="headerlink" href="#effect-guidelines" title="Permanent link">&para;</a></h2>
+<h3 id="fixed-effect-magnitudes">Fixed Effect Magnitudes<a class="headerlink" href="#fixed-effect-magnitudes" title="Permanent link">&para;</a></h3>
+<p>Effects are determined by recipe category, NOT tag level:
+- All elemental damage Sustenance recipes ([Fire], [Cold], [Acid], [Lightning], [Sonic]) give resistance 5
+- All [Fire] Enhancement recipes give +10 movement speed
+- All [Flight] Utility recipes give 20-foot fly speed
+- Higher tag levels provide longer duration, not stronger effects</p>
+<h3 id="stacking-rules">Stacking Rules<a class="headerlink" href="#stacking-rules" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Same recipe type doesn't stack (higher bonus applies)</li>
+<li>Different categories stack normally (Enhancement + Utility + Sustenance)</li>
+<li>Cannot consume same recipe until duration expires</li>
+<li>All effects provide item bonuses (following PF2e item bonus rules)</li>
+</ul>
+<hr />
+<h2 id="example-recipes">Example Recipes<a class="headerlink" href="#example-recipes" title="Permanent link">&para;</a></h2>
+<p><em>Note: Recipe names are purely narrative. "Drake Fire Roast" is mechanically identical to "Goblin Fire Stew" if both use [Fire] components of the same level.</em></p>
+<h3 id="wolf-pack-jerky">Wolf Pack Jerky<a class="headerlink" href="#wolf-pack-jerky" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Category:</strong> Sustenance</li>
+<li><strong>Food Form:</strong> Jerky ([Meat] only)</li>
+<li><strong>Components:</strong> [Meat] x1</li>
+<li><strong>DC:</strong> 14 (no special component)</li>
+<li><strong>Effect:</strong> Removes fatigued, provides 8 hours satiation</li>
+<li><strong>Note:</strong> Simple trail food using only mundane ingredients</li>
+</ul>
+<h3 id="drake-fire-roast">Drake Fire Roast<a class="headerlink" href="#drake-fire-roast" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Category:</strong> Enhancement  </li>
+<li><strong>Food Form:</strong> Roast ([Meat] + [Fat])</li>
+<li><strong>Components:</strong> [Fire 7] + drake [Meat] + drake [Fat]</li>
+<li><strong>DC:</strong> 21 (14 + 7)</li>
+<li><strong>Effect:</strong> +2 circumstance bonus to Reflex saves for 210 minutes (3.5 hours)</li>
+</ul>
+<h3 id="harpy-wing-stew">Harpy Wing Stew<a class="headerlink" href="#harpy-wing-stew" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Category:</strong> Utility</li>
+<li><strong>Food Form:</strong> Stew ([Meat] + [Fat] + [Bone])</li>
+<li><strong>Components:</strong> [Flight 6] + harpy [Meat] + harpy [Fat] + harpy [Bone]</li>
+<li><strong>DC:</strong> 20 (14 + 6)</li>
+<li><strong>Effect:</strong> Gain 20-foot fly speed for 180 minutes (3 hours)</li>
+</ul>
+<p><strong>Note:</strong> Single serving only (Utility recipes don't batch - can't share fly speed)</p>
+<h3 id="party-protection-soup-batch">Party Protection Soup (Batch)<a class="headerlink" href="#party-protection-soup-batch" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Category:</strong> Sustenance</li>
+<li><strong>Food Form:</strong> Soup ([Meat] + [Fat] + [Bone])</li>
+<li><strong>Components:</strong> [Fire 18] + [Meat] x3 + [Fat] x3 + [Bone] x3</li>
+<li><strong>DC:</strong> 36 (14 + 18 + 4 for 2 extra servings)</li>
+<li>
+<ul>
+<li><strong>Effect:</strong> 3 servings, each person gets Fire Resistance 5 for 6 hours
+<strong>Note:</strong> Single component split among 3 people (18 hours / 3 = 6 hours each)</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="dangerous-components">Dangerous Components<a class="headerlink" href="#dangerous-components" title="Permanent link">&para;</a></h2>
+<p>Some tags require careful handling:</p>
+<ul>
+<li><strong>[Fire/Lightning]:</strong> Failure = 1d6 energy damage</li>
+<li><strong>[Venom]:</strong> Failure = Sickened 1 (blocks further cooking)</li>
+<li><strong>[Magical]:</strong> Failure = Stupefied 1 for 10 minutes</li>
+</ul>
+<p>Professional tools reduce failure consequences by one step.</p>
+<hr />
+<h2 id="integration">Integration<a class="headerlink" href="#integration" title="Permanent link">&para;</a></h2>
+<h3 id="with-harvestcraft">With HarvestCraft<a class="headerlink" href="#with-harvestcraft" title="Permanent link">&para;</a></h3>
+<ul>
+<li>All harvested components work in recipes</li>
+<li>Mundane materials provide base requirements</li>
+<li>Special tags enable enhanced effects</li>
+<li>Combat-harvested components work normally</li>
+</ul>
+<h3 id="with-hindercraft">With HinderCraft<a class="headerlink" href="#with-hindercraft" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Recently hindered features may be easier to harvest</li>
+<li>Hindered components could provide fresher materials</li>
+<li>No special mechanical interaction required</li>
+</ul>
+<h3 id="economic-value">Economic Value<a class="headerlink" href="#economic-value" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Mundane recipes: 1-5 gp value</li>
+<li>Enhancement recipes: 10-50 gp value  </li>
+<li>Utility recipes: 25-100 gp value</li>
+</ul>
+<hr />
+<h2 id="quick-reference">Quick Reference<a class="headerlink" href="#quick-reference" title="Permanent link">&para;</a></h2>
+<h3 id="recipe-planning">Recipe Planning<a class="headerlink" href="#recipe-planning" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Choose category</strong> (determines effect type)</li>
+<li><strong>Select special component</strong> (determines tag and duration)</li>
+<li><strong>Choose food form</strong> (based on available mundane components)</li>
+<li><strong>Decide portions</strong> (single or batch for Enhancement/Sustenance)</li>
+<li><strong>Calculate DC</strong> (14 + tag level + batch modifier if applicable)</li>
+<li><strong>Cook</strong> (30 min field, 1 hour camp)</li>
+</ol>
+<h3 id="duration-formula">Duration Formula<a class="headerlink" href="#duration-formula" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Sustenance:</strong> 1 hour x tag level (max 24 hours)</li>
+<li><strong>Enhancement:</strong> 30 minutes x tag level (max 10 hours)</li>
+<li><strong>Utility:</strong> 30 minutes x tag level (max 10 hours)</li>
+</ul>
+<h3 id="batch-cooking">Batch Cooking<a class="headerlink" href="#batch-cooking" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Utility:</strong> No batching - always single serving (special capabilities cannot be shared)</li>
+<li><strong>Enhancement/Sustenance:</strong> Can split duration among servings</li>
+<li><strong>DC Calculation:</strong> Base DC + 2 per extra serving</li>
+<li><strong>Duration Split:</strong> Total duration / servings = time per person</li>
+<li><strong>Important:</strong> Cannot combine multiple special components for enhanced effects</li>
+</ul>
+<hr />
+<p><strong>Remember:</strong> CookCraft is simple - one component, one effect. Choose your category to determine how the component's power manifests. Utility recipes are personal capabilities (no batching), while Enhancement and Sustenance can be shared meals (split duration). The mundane components you use determine the food form (stew, roast, jerky) but not the mechanical effect. This system turns leftover creature parts into meaningful tactical choices without complex rules.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="November 9, 2025 02:11:49 AEDT">November 9, 2025 02:11:49</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/nargath" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit", "content.metadata"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://nargath.github.io/CreatureCraft/</loc>
+         <lastmod>2025-11-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://nargath.github.io/CreatureCraft/cookcraft/</loc>
+         <lastmod>2025-11-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://nargath.github.io/CreatureCraft/cookcraft/cc_essence_powers_qr/</loc>
+         <lastmod>2025-11-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://nargath.github.io/CreatureCraft/cookcraft/cc_rules/</loc>
+         <lastmod>2025-11-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://nargath.github.io/CreatureCraft/harvestcraft/</loc>
+         <lastmod>2025-11-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://nargath.github.io/CreatureCraft/harvestcraft/hc_rules/</loc>
+         <lastmod>2025-11-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
