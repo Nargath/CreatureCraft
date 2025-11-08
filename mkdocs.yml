@@ -1,0 +1,16 @@
+site_name: Creature Craft
+theme:
+  name: material
+
+nav:
+  - Home: readme.md
+  - HarvestCraft: HarvestCraft.md
+  - CookCraft: CookCraft.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - footnotes
+  - def_list
+  - codehilite
