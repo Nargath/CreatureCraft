@@ -41,7 +41,7 @@ theme:
     repo: fontawesome/brands/github
     
 nav:
-  - Home: readme.md
+  - Home: index.md
   - HarvestCraft: harvestcraft.md
   - CookCraft: cookcraft.md
 
