@@ -42,8 +42,14 @@ theme:
     
 nav:
   - Home: index.md
-  - HarvestCraft: harvestcraft.md
-  - CookCraft: cookcraft.md
+  - Cookcraft:
+      - Overview: cc_overview.md
+      - Overview: cc_overview.md
+      - Rules: cc_rules.md
+      - Essence Powers (Quick Reference): cc_essence_powers_qr.md
+  - HarvestCraft: 
+      - Overview: hc_overview.md
+      - Rules: hc_rules.md
 
 # === Markdown extensions ===
 markdown_extensions:
