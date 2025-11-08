@@ -11,16 +11,10 @@
 - **Utility:** 30 min x tag level (max 10h) - Special capabilities
 
 **Symbols:**
-- âš ï¸ = Needs review/refinement
-- â€” = No application for this category
+- @ = Needs review/refinement
+- ~ = No application for this category
 
----
 
-## Three-Pillar Magic System
-
-**Illumination (Light/Dark)** - Morally neutral visibility control  
-**Spirit (Hale/Fell)** - Morally charged good vs evil essence  
-**Vitality (Healing/Drain)** - Morally neutral life force manipulation
 
 ---
 
@@ -52,7 +46,7 @@
 |----------|--------|
 | Sustenance | Lightning resistance 5 |
 | Enhancement | +1 Initiative |
-| Utility | âš ï¸ Spark (stabilize dying, power devices) |
+| Utility | @ Spark (stabilize dying, power devices) |
 
 ### [Sonic X]
 | Category | Effect |
@@ -107,16 +101,16 @@
 ### [Sharp X]
 | Category | Effect |
 |----------|--------|
-| Sustenance | â€” |
+| Sustenance | ~ |
 | Enhancement | +1 attack rolls |
 | Utility | Ignore Hardness 5 (cutting objects) |
 
 ### [Defense X]
 | Category | Effect |
 |----------|--------|
-| Sustenance | âš ï¸ Reduce crit damage by 3 |
+| Sustenance | @ Reduce crit damage by 3 |
 | Enhancement | +1 AC |
-| Utility | â€” |
+| Utility | ~ |
 
 ---
 
@@ -132,7 +126,7 @@
 ### [Burrow X]
 | Category | Effect |
 |----------|--------|
-| Sustenance | âš ï¸ â€” |
+| Sustenance | ~ |
 | Enhancement | +2 Athletics (Climb) |
 | Utility | 15 ft burrow speed |
 
@@ -148,7 +142,7 @@
 |----------|--------|
 | Sustenance | Ignore encumbrance |
 | Enhancement | +10 all movement speeds |
-| Utility | âš ï¸ Step 10 ft + ignore difficult terrain |
+| Utility | @ Step 10 ft + ignore difficult terrain |
 
 ---
 
@@ -166,21 +160,21 @@
 ### [Paralyze X]
 | Category | Effect |
 |----------|--------|
-| Sustenance | âš ï¸ â€” |
+| Sustenance | ~ |
 | Enhancement | +2 saves vs paralysis/immobilization |
 | Utility | Create agent (stunned 1, Fort DC 10+level) |
 
 ### [Disease X]
 | Category | Effect |
 |----------|--------|
-| Sustenance | âš ï¸ â€” |
+| Sustenance | ~ |
 | Enhancement | +2 Fort vs disease |
 | Utility | Create agent (sickened 1/1 min, Fort DC 10+level) |
 
 ### [Petrify X]
 | Category | Effect |
 |----------|--------|
-| Sustenance | âš ï¸ â€” |
+| Sustenance | ~ |
 | Enhancement | +2 Fort vs petrification |
 | Utility | Harden objects (+5 Hardness, non-magical only) |
 
@@ -189,12 +183,12 @@
 |----------|--------|
 | Sustenance | Remove wounded (1 min after combat) |
 | Enhancement | Regain HP = level when using Treat Wounds |
-| Utility | âš ï¸ Regenerative bounce (2d8 HP, first hit/combat) |
+| Utility | @ Regenerative bounce (2d8 HP, first hit/combat) |
 
 ### [Restrain X]
 | Category | Effect |
 |----------|--------|
-| Sustenance | âš ï¸ â€” |
+| Sustenance | ~ |
 | Enhancement | +2 Escape & vs Grapple/Grab |
 | Utility | Grasping Strike (free Grapple after hit) |
 
@@ -221,7 +215,7 @@
 |----------|--------|
 | Sustenance | Sentinel Awareness (secret check after 10 min) |
 | Enhancement | +2 Perception |
-| Utility | â€” |
+| Utility | ~ |
 
 ### [Confusion X]
 | Category | Effect |
@@ -245,7 +239,7 @@
 | Category | Effect |
 |----------|--------|
 | Sustenance | Reduce bright light penalties by 1 step |
-| Enhancement | âš ï¸ +2 Perception in bright light |
+| Enhancement | @ +2 Perception in bright light |
 | Utility | Luminous Eyes (30 ft cone bright light) |
 
 ### [Dark X]
@@ -276,7 +270,7 @@
 ### [Healing X] (Positive Vitality)
 | Category | Effect |
 |----------|--------|
-| Sustenance | âš ï¸ â€” |
+| Sustenance | ~ |
 | Enhancement | +2 Medicine |
 | Utility | Healing Touch (2d8 HP, 30 min cooldown) |
 
@@ -296,12 +290,12 @@
 |----------|--------|
 | Sustenance | Reduce polymorph duration by half |
 | Enhancement | +2 saves vs polymorph |
-| Utility | âš ï¸ Size Shift (1 size, 1 min, 10 min cooldown) |
+| Utility | @ Size Shift (1 size, 1 min, 10 min cooldown) |
 
 ### [Illusion X]
 | Category | Effect |
 |----------|--------|
-| Sustenance | â€” |
+| Sustenance | ~ |
 | Enhancement | +2 Will & Perception vs illusions |
 | Utility | Illusory Disguise (1 min casting) |
 
