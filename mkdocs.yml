@@ -1,6 +1,10 @@
 site_name: Creature Craft
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
 
 nav:
   - Home: readme.md
