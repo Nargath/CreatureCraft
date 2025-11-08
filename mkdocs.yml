@@ -4,7 +4,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    - toc.integrate
+    - toc.follow
 
 nav:
   - Home: readme.md
