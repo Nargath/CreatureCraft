@@ -6,11 +6,15 @@
 ## How to Use This Reference
 
 **Duration by Category:**
-- **Sustenance:** 1 hour x tag level (max 24h) - Environmental protection
-- **Enhancement:** 30 min x tag level (max 10h) - Combat/skill boosts  
-- **Utility:** 30 min x tag level (max 10h) - Special capabilities
+
+- **Sustenance:** 1 hour × tag level (max 24h) – Environmental protection  
+- **Enhancement:** 30 min × tag level (max 10h) – Combat/skill boosts  
+- **Utility:** 30 min × tag level (max 10h) – Special capabilities
+
+
 
 **Symbols:**
+
 - @ = Needs review/refinement
 - ~ = No application for this category
 
@@ -329,6 +333,7 @@
 ## COMMON PATTERNS
 
 **Agent Creation (Venom/Paralyze/Disease/Confusion):**
+
 - 1 minute to create
 - One object at a time (new replaces old)
 - DC = 10 + your level
@@ -336,11 +341,13 @@
 - Cannot treat food/drinks/worn items
 
 **Touch Abilities (Healing/Drain):**
+
 - 1 action, touch range
 - Cooldown prevents spam (10-30 min)
 - Strategic timing required
 
 **Sustained Effects (Charm/Dark/Sense):**
+
 - Require setup time (1-10 min)
 - Need continuous effort or conditions
 - End if conditions break
