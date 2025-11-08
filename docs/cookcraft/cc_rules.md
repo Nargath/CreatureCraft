@@ -291,39 +291,39 @@ Effects are determined by recipe category, NOT tag level:
 
 ### Wolf Pack Jerky
 
-**Category:** Sustenance
-**Food Form:** Jerky ([Meat] only)
-**Components:** [Meat] x1
-**DC:** 14 (no special component)
-**Effect:** Removes fatigued, provides 8 hours satiation
-**Note:** Simple trail food using only mundane ingredients
+- **Category:** Sustenance
+- **Food Form:** Jerky ([Meat] only)
+- **Components:** [Meat] x1
+- **DC:** 14 (no special component)
+- **Effect:** Removes fatigued, provides 8 hours satiation
+- **Note:** Simple trail food using only mundane ingredients
 
 ### Drake Fire Roast
 
-**Category:** Enhancement  
-**Food Form:** Roast ([Meat] + [Fat])
-**Components:** [Fire 7] + drake [Meat] + drake [Fat]
-**DC:** 21 (14 + 7)
-**Effect:** +2 circumstance bonus to Reflex saves for 210 minutes (3.5 hours)
+- **Category:** Enhancement  
+- **Food Form:** Roast ([Meat] + [Fat])
+- **Components:** [Fire 7] + drake [Meat] + drake [Fat]
+- **DC:** 21 (14 + 7)
+- **Effect:** +2 circumstance bonus to Reflex saves for 210 minutes (3.5 hours)
 
 ### Harpy Wing Stew
 
-**Category:** Utility
-**Food Form:** Stew ([Meat] + [Fat] + [Bone])
-**Components:** [Flight 6] + harpy [Meat] + harpy [Fat] + harpy [Bone]
-**DC:** 20 (14 + 6)
-**Effect:** Gain 20-foot fly speed for 180 minutes (3 hours)
+- **Category:** Utility
+- **Food Form:** Stew ([Meat] + [Fat] + [Bone])
+- **Components:** [Flight 6] + harpy [Meat] + harpy [Fat] + harpy [Bone]
+- **DC:** 20 (14 + 6)
+- **Effect:** Gain 20-foot fly speed for 180 minutes (3 hours)
 
 
 **Note:** Single serving only (Utility recipes don't batch - can't share fly speed)
 
 ### Party Protection Soup (Batch)
 
-**Category:** Sustenance
-**Food Form:** Soup ([Meat] + [Fat] + [Bone])
-**Components:** [Fire 18] + [Meat] x3 + [Fat] x3 + [Bone] x3
-**DC:** 36 (14 + 18 + 4 for 2 extra servings)
-**Effect:** 3 servings, each person gets Fire Resistance 5 for 6 hours
+- **Category:** Sustenance
+- **Food Form:** Soup ([Meat] + [Fat] + [Bone])
+- **Components:** [Fire 18] + [Meat] x3 + [Fat] x3 + [Bone] x3
+- **DC:** 36 (14 + 18 + 4 for 2 extra servings)
+- - **Effect:** 3 servings, each person gets Fire Resistance 5 for 6 hours
 **Note:** Single component split among 3 people (18 hours / 3 = 6 hours each)
 
 ---
