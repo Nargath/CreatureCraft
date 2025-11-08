@@ -1,3 +1,8 @@
+---
+title: CookCraft SubSystem
+date: "{{ git_revision_date_localized }}"
+---
+
 # CookCraft Subsystem
 *Creature Component Cuisine*
 

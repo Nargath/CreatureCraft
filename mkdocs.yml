@@ -1,20 +1,85 @@
-site_name: Creature Craft
+# === Basic site info ===
+site_name: CreatureCraft
+site_url: https://nargath.github.io/CreatureCraft/
+site_author: Nargath
+repo_url: https://github.com/nargath/CreatureCraft
+repo_name: CreatureCraft
+
+# === Theme configuration ===
 theme:
   name: material
+  language: en
   features:
+    # Navigation and structure
     - navigation.tabs
     - navigation.sections
+    - navigation.expand
+    - navigation.top
+    # Table of contents
     - toc.follow
-
+    # Usability
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    # Display metadata like "Last updated"
+    - content.metadata
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+    
 nav:
   - Home: readme.md
-  - HarvestCraft: HarvestCraft.md
-  - CookCraft: CookCraft.md
+  - HarvestCraft: harvestcraft.md
+  - CookCraft: cookcraft.md
 
+# === Markdown extensions ===
 markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
   - toc:
       permalink: true
-  - admonition
-  - footnotes
-  - def_list
-  - codehilite
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# === Plugins ===
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: false
+      type: datetime
+      fallback_to_build_date: true
+      locale: en
+      timezone: Australia/Sydney
+
+# === Extra options ===
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nargath
+  generator: false
+  footer:
+    content: |
+      <hr />
+      <p style="font-size:0.9em; text-align:center;">
+      Last updated: {{ git_revision_date_localized }}
+      </p>
