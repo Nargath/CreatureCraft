@@ -6,9 +6,9 @@
 ## How to Use This Reference
 
 **Duration by Category:**
-- **Sustenance:** 1 hour Ã— tag level (max 24h) - Environmental protection
-- **Enhancement:** 30 min Ã— tag level (max 10h) - Combat/skill boosts  
-- **Utility:** 30 min Ã— tag level (max 10h) - Special capabilities
+- **Sustenance:** 1 hour x tag level (max 24h) - Environmental protection
+- **Enhancement:** 30 min x tag level (max 10h) - Combat/skill boosts  
+- **Utility:** 30 min x tag level (max 10h) - Special capabilities
 
 **Symbols:**
 - âš ï¸ = Needs review/refinement
@@ -139,7 +139,7 @@
 ### [Swim X]
 | Category | Effect |
 |----------|--------|
-| Sustenance | Hold breath 5Ã— longer |
+| Sustenance | Hold breath 5x longer |
 | Enhancement | +2 Athletics (Swim) |
 | Utility | Swim speed = land speed |
 

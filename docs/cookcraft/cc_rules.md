@@ -57,9 +57,9 @@ Anyone can cook creature components - there are no recipes to learn or discover.
 
 ### Duration by Category
 **Base duration multiplied by tag level:**
-- **Sustenance:** 1 hour Ã— tag level (max 24 hours)
-- **Enhancement:** 10 minutes Ã— tag level (max 3 hours)
-- **Combat:** 1 round Ã— tag level (max 5 rounds)
+- **Sustenance:** 1 hour x tag level (max 24 hours)
+- **Enhancement:** 10 minutes x tag level (max 3 hours)
+- **Combat:** 1 round x tag level (max 5 rounds)
 - **Curative:** Instant (tag level determines what it can affect)
 
 ### Examples
@@ -120,7 +120,7 @@ Recipe categories are simply different ways to prepare components. The same [Fir
 - **[Sensory]** â†’ +2 item bonus to Perception during rest/watch
 - **[Mundane]** â†’ Basic nutrition and fatigue removal
 
-**Duration:** 1 hour Ã— tag level (max 24 hours)
+**Duration:** 1 hour x tag level (max 24 hours)
 **Example:** [Fire 5] Sustenance = Cold resistance 5 for 5 hours
 
 ### Enhancement  
@@ -134,7 +134,7 @@ Recipe categories are simply different ways to prepare components. The same [Fir
 - **[Flight]** â†’ +10 foot movement speed
 - **[Magical]** â†’ +1 item bonus to spell DCs
 
-**Duration:** 10 minutes Ã— tag level (max 3 hours)
+**Duration:** 10 minutes x tag level (max 3 hours)
 **Example:** [Sharp 8] Enhancement = +1 to attacks for 80 minutes
 
 ### Combat
@@ -148,7 +148,7 @@ Recipe categories are simply different ways to prepare components. The same [Fir
 - **[Flight]** â†’ Ignore difficult terrain
 - **[Magical]** â†’ Strikes count as magical
 
-**Duration:** 1 round Ã— tag level (max 5 rounds)
+**Duration:** 1 round x tag level (max 5 rounds)
 **Example:** [Fire 5] Combat = +1d6 fire damage for 5 rounds
 
 ### Curative
@@ -207,7 +207,7 @@ The mundane components you use determine what type of food you make. All forms p
 
 ### Batch Cooking Requirements
 - Add 1 mundane component per extra serving
-- Example: Stew for 3 people needs 3Ã— the mundane components
+- Example: Stew for 3 people needs 3x the mundane components
 
 ---
 
@@ -297,7 +297,7 @@ Effects are determined by recipe category, NOT tag level:
 ### Party Protection Soup (Batch)
 **Category:** Enhancement
 **Food Form:** Soup ([Meat] + [Fat] + [Bone])
-**Components:** [Fire 18] + [Meat] Ã—3 + [Fat] Ã—3 + [Bone] Ã—3
+**Components:** [Fire 18] + [Meat] x3 + [Fat] x3 + [Bone] x3
 **DC:** 36 (14 + 18 + 4 for 2 extra servings)
 **Effect:** 3 servings, each person gets Fire Resistance 5 for 60 minutes
 **Note:** Single component split among 3 people (180 min Ã· 3 = 60 min each)
@@ -348,9 +348,9 @@ Professional tools reduce failure consequences by one step.
 6. **Cook** (30 min field, 1 hour camp)
 
 ### Duration Formula
-- **Sustenance:** 1 hour Ã— tag level (max 24 hours)
-- **Enhancement:** 10 minutes Ã— tag level (max 3 hours)
-- **Combat:** 1 round Ã— tag level (max 5 rounds)
+- **Sustenance:** 1 hour x tag level (max 24 hours)
+- **Enhancement:** 10 minutes x tag level (max 3 hours)
+- **Combat:** 1 round x tag level (max 5 rounds)
 - **Curative:** Instant (affects conditions up to tag level)
 
 ### Batch Cooking
