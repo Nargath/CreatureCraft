@@ -106,8 +106,8 @@ There are no complex recipes to learn. If you have a [Fire] component and some m
 
 ### What Doesn't Work
 
-- [Fire 5] + [Fire 5] &larr; [Fire 10] effect
-- [Fire 5] + [Sharp 3] &larr; both effects at once
+- [Fire 5] + [Fire 5] &rarr; [Fire 10] effect
+- [Fire 5] + [Sharp 3] &rarr; both effects at once
 - Multiple components don't stack or enhance
 
 ---
@@ -121,16 +121,16 @@ Recipe categories are simply different ways to prepare components. The same [Fir
 
 **Tag Interpretations (Fixed Effects):**
 
-- **[Fire]** &larr; Fire resistance 5
-- **[Cold]** &larr; Cold resistance 5
-- **[Acid]** &larr; Acid resistance 5
-- **[Lightning]** &larr; Lightning resistance 5
-- **[Sonic]** &larr; Sonic resistance 5
-- **[Venom]** &larr; Poison resistance 5
-- **[Vision]** &larr; Reduce light/dark penalties by 1 step
-- **[Sense]** &larr; Sentinel Awareness (secret check after 10 min)
-- **[Regeneration]** &larr; Remove wounded (1 min after combat)
-- **[Mundane]** &larr; Basic nutrition and fatigue removal
+- **[Fire]** &rarr; Fire resistance 5
+- **[Cold]** &rarr; Cold resistance 5
+- **[Acid]** &rarr; Acid resistance 5
+- **[Lightning]** &rarr; Lightning resistance 5
+- **[Sonic]** &rarr; Sonic resistance 5
+- **[Venom]** &rarr; Poison resistance 5
+- **[Vision]** &rarr; Reduce light/dark penalties by 1 step
+- **[Sense]** &rarr; Sentinel Awareness (secret check after 10 min)
+- **[Regeneration]** &rarr; Remove wounded (1 min after combat)
+- **[Mundane]** &rarr; Basic nutrition and fatigue removal
 
 **Duration:** 1 hour x tag level (max 24 hours)
 **Example:** [Fire 5] Sustenance = Fire resistance 5 for 5 hours
@@ -140,16 +140,16 @@ Recipe categories are simply different ways to prepare components. The same [Fir
 
 **Tag Interpretations (Fixed Effects):**
 
-- **[Fire]** &larr; +2 circumstance bonus to Reflex saves
-- **[Cold]** &larr; +1 status bonus to AC
-- **[Acid]** &larr; +2 circumstance bonus to Fortitude saves
-- **[Lightning]** &larr; +1 status bonus to Initiative
-- **[Sonic]** &larr; +2 circumstance bonus to Performance & Intimidation
-- **[Venom]** &larr; +2 circumstance bonus to Fortitude saves vs poison
-- **[Sharp]** &larr; +1 item bonus to attack rolls
-- **[Vision]** &larr; +2 circumstance bonus to Perception (visual)
-- **[Flight]** &larr; +2 circumstance bonus to Acrobatics
-- **[Magical]** &larr; +1 circumstance bonus to spell DCs & attacks
+- **[Fire]** &rarr; +2 circumstance bonus to Reflex saves
+- **[Cold]** &rarr; +1 status bonus to AC
+- **[Acid]** &rarr; +2 circumstance bonus to Fortitude saves
+- **[Lightning]** &rarr; +1 status bonus to Initiative
+- **[Sonic]** &rarr; +2 circumstance bonus to Performance & Intimidation
+- **[Venom]** &rarr; +2 circumstance bonus to Fortitude saves vs poison
+- **[Sharp]** &rarr; +1 item bonus to attack rolls
+- **[Vision]** &rarr; +2 circumstance bonus to Perception (visual)
+- **[Flight]** &rarr; +2 circumstance bonus to Acrobatics
+- **[Magical]** &rarr; +1 circumstance bonus to spell DCs & attacks
 
 **Duration:** 30 minutes x tag level (max 10 hours)
 **Example:** [Sharp 8] Enhancement = +1 to attacks for 240 minutes (4 hours)
@@ -159,15 +159,15 @@ Recipe categories are simply different ways to prepare components. The same [Fir
 
 **Tag Interpretations (Fixed Effects):**
 
-- **[Fire]** &larr; Ignite (light fires, melt wax, heat objects)
-- **[Flight]** &larr; Gain 20-foot fly speed (hover)
-- **[Vision]** &larr; See invisibility
-- **[Water]** &larr; Breathe underwater
-- **[Burrow]** &larr; Gain 15-foot burrow speed through earth
-- **[Sharp]** &larr; Ignore object Hardness up to 5 (non-magical objects)
-- **[Magical]** &larr; Read magic (understand magical writing)
-- **[Venom]** &larr; Create contact poison (2d4 damage, Fort DC 10+level)
-- **[Charm]** &larr; Sustained Charm (1 min setup, maintain conversation)
+- **[Fire]** &rarr; Ignite (light fires, melt wax, heat objects)
+- **[Flight]** &rarr; Gain 20-foot fly speed (hover)
+- **[Vision]** &rarr; See invisibility
+- **[Water]** &rarr; Breathe underwater
+- **[Burrow]** &rarr; Gain 15-foot burrow speed through earth
+- **[Sharp]** &rarr; Ignore object Hardness up to 5 (non-magical objects)
+- **[Magical]** &rarr; Read magic (understand magical writing)
+- **[Venom]** &rarr; Create contact poison (2d4 damage, Fort DC 10+level)
+- **[Charm]** &rarr; Sustained Charm (1 min setup, maintain conversation)
 
 **Duration:** 30 minutes x tag level (max 10 hours)
 **Example:** [Flight 6] Utility = 20-foot fly speed for 180 minutes
