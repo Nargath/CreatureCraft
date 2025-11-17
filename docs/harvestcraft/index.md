@@ -1,3 +1,3 @@
 Here are the HarvestCraft pages
 
-- [Rules](/harvestcraft/hc_rules.md)
+- [Rules](hc_rules.md)

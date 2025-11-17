@@ -6,10 +6,10 @@ This maps the process of acquiring, and using, components known as Essences to c
 So far it consists of:
 
 - Hindercraft
-- [Harvestcraft](docs/harvestcraft/hc_rules)
+- [Harvestcraft](harvestcraft/hc_rules.md)
 - Distillcraft
 - Forgecraft
-- [Cookcraft](docs/cookcraft/cc_rules)
+- [Cookcraft](cookcraft/cc_rules.md)
 
 Future subsystems will include:
 
@@ -18,6 +18,6 @@ Future subsystems will include:
 
 There's also documentation on the base rules and the design philosophy:
 
-- [Tag System Framework](/philosophy_design/tag_system_Framework)
-- [Design Philosophy](/philosophy_design/design_philosophy)
-- [Special Tags List](/philosophy_design/special_tags_list)
+- [Tag System Framework](rules_philosophy/tag_system_framework.md)
+- [Design Philosophy](rules_philosophy/design_philosophy.md)
+- [Special Tags List](rules_philosophy/special_tags_list.md)
