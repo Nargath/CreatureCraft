@@ -18,9 +18,9 @@ HarvestCraft allows you to extract valuable materials from defeated creatures. T
 ## Basic Harvesting
 
 ### How to Harvest
-**Declare Intent:** Choose what type of component you want to extract
-**Make Check:** Roll Survival against the component's DC
-**Apply Results:** Gain materials based on your degree of success
+- **Declare Intent:** Choose what type of component you want to extract
+- **Make Check:** Roll Survival against the component's DC
+- **Apply Results:** Gain materials based on your degree of success
 
 ### Difficulty Class
 **DC = 14 + Tag Level + Difficulty Modifier**
@@ -28,20 +28,20 @@ HarvestCraft allows you to extract valuable materials from defeated creatures. T
 - **Difficulty Modifier:** Based on extraction complexity (+0 to +10)
 
 ### Degrees of Success
-**Critical Success:** Gain 2 components of the chosen type
-**Success:** Gain 1 component of the chosen type  
-**Failure:** Gain 0 components + condition that blocks further harvesting (component remains intact)
-**Critical Failure:** Gain 0 components + condition that blocks harvesting + component permanently destroyed
+- **Critical Success:** Gain 2 components of the chosen type
+- **Success:** Gain 1 component of the chosen type  
+- **Failure:** Gain 0 components + condition that blocks further harvesting (component remains intact)
+- **Critical Failure:** Gain 0 components + condition that blocks harvesting + component permanently destroyed
 
 ### Failure Consequences
 Each component type has specific conditions that represent extraction dangers:
 
-**[Fire] Components:** Take 1d6 fire damage - *"You cannot attempt Harvest actions while injured by fire damage"*
-**[Venom] Components:** Gain Sickened 1 - *"You cannot attempt Harvest actions while Sickened from venom"*  
-**[Sharp] Components:** Gain Clumsy 1 for 10 minutes - *"You cannot attempt Harvest actions while Clumsy from injury"*
-**[Magical] Components:** Gain Stupefied 1 for 10 minutes - *"You cannot attempt Harvest actions while Stupefied"*
-**[Sensory] Components:** Gain Dazzled for 10 minutes - *"You cannot attempt Harvest actions while Dazzled"*
-**[Flight] Components:** Gain Prone + Clumsy 1 for 1 minute - *"You cannot attempt Harvest actions while Clumsy"*
+- **[Fire] Components:** Take 1d6 fire damage - *"You cannot attempt Harvest actions while injured by fire damage"*
+- **[Venom] Components:** Gain Sickened 1 - *"You cannot attempt Harvest actions while Sickened from venom"*  
+- **[Sharp] Components:** Gain Clumsy 1 for 10 minutes - *"You cannot attempt Harvest actions while Clumsy from injury"*
+- **[Magical] Components:** Gain Stupefied 1 for 10 minutes - *"You cannot attempt Harvest actions while Stupefied"*
+- **[Sensory] Components:** Gain Dazzled for 10 minutes - *"You cannot attempt Harvest actions while Dazzled"*
+- **[Flight] Components:** Gain Prone + Clumsy 1 for 1 minute - *"You cannot attempt Harvest actions while Clumsy"*
 
 **Recovery:** Remove conditions through normal means (time, healing, magic) to resume harvesting
 
@@ -50,25 +50,25 @@ Each component type has specific conditions that represent extraction dangers:
 ## Types of Materials
 
 ### Special Components (Tagged)
-**What They Are:** Magical or enhanced creature features with power levels
-**Tag Level:** Equals creature's Challenge Rating
-**Examples:** Dragon fire glands [Fire 17], Owlbear claws [Sharp 7], Spider venom [Venom 3]
-**Uses:** High-value crafting, magical enhancement, specialized applications
+- **What They Are:** Magical or enhanced creature features with power levels
+- **Tag Level:** Equals creature's Challenge Rating
+- **Examples:** Dragon fire glands [Fire 17], Owlbear claws [Sharp 7], Spider venom [Venom 3]
+- **Uses:** High-value crafting, magical enhancement, specialized applications
 
 ### Mundane Materials (Untagged)
-**What They Are:** Basic biological materials for survival and trade
-**No Power Level:** Simple functional materials
-**Examples:** Meat, hide, bone, fat
-**Uses:** Cooking, basic crafting, economic trade
+- **What They Are:** Basic biological materials for survival and trade
+- **No Power Level:** Simple functional materials
+- **Examples:** Meat, hide, bone, fat
+- **Uses:** Cooking, basic crafting, economic trade
 
 ---
 
 ## Time Requirements
 
 ### Special Components: Precision Extraction
-**Time:** 10 minutes per component type (exploration activity)
-**Process:** Careful extraction of specific organs or features
-**Why Consistent:** Extracting a fire gland requires the same precision work regardless of creature size
+- **Time:** 10 minutes per component type (exploration activity)
+- **Process:** Careful extraction of specific organs or features
+- **Why Consistent:** Extracting a fire gland requires the same precision work regardless of creature size
 
 ### Mundane Materials: Bulk Processing
 **Time:** Varies by creature size (camp activity)
@@ -86,9 +86,9 @@ Each component type has specific conditions that represent extraction dangers:
 ## Tools and Equipment
 
 ### Tool Requirements
-**Without Proper Tools:** -2 circumstance penalty to all Harvest checks
-**With Harvesting Tools:** No penalty (standard expectation)
-**Quality Tools:** Item bonuses for expert and masterwork versions
+- **Without Proper Tools:** -2 circumstance penalty to all Harvest checks
+- **With Harvesting Tools:** No penalty (standard expectation)
+- **Quality Tools:** Item bonuses for expert and masterwork versions
 
 ### Harvesting Tools
 **Contents:** Skinning knives, bone saws, extraction picks, cutting boards, collection containers, preservation salts, measuring tools, binding materials
@@ -104,14 +104,14 @@ Each component type has specific conditions that represent extraction dangers:
 ## Combat Harvesting
 
 ### When Available
-**Requirements:** A creature feature has been Hindered this round through the Hindercraft system
-**Limited to External Features:** Only appendages and external organs can be severed in combat
+- **Requirements:** A creature feature has been Hindered this round through the Hindercraft system
+- **Limited to External Features:** Only appendages and external organs can be severed in combat
 
 ### Combat Harvesting Action
-**Action Cost:** 2 Actions
-**Requirements:** Must be adjacent to creature, feature must be external type
-**Skill Check:** Survival vs DC (14 + Tag Level + 2)
-**No Tools Required:** Uses weapons and combat methods
+- **Action Cost:** 2 Actions
+- **Requirements:** Must be adjacent to creature, feature must be external type
+- **Skill Check:** Survival vs DC (14 + Tag Level + 2)
+- **No Tools Required:** Uses weapons and combat methods
 
 ### Combat Harvestable Features
 **Can Be Harvested in Combat:**
@@ -128,10 +128,10 @@ Each component type has specific conditions that represent extraction dangers:
 - **[Vital]:** Internal organs
 
 ### Combat Harvesting Results
-**Critical Success:** Gain 1 component
-**Success:** Gain 1 component
-**Failure:** No component gained
-**Critical Failure:** No component + creature makes opportunity attack against you
+- **Critical Success:** Gain 1 component
+- **Success:** Gain 1 component
+- **Failure:** No component gained
+- **Critical Failure:** No component + creature makes opportunity attack against you
 
 ---
 
@@ -150,12 +150,12 @@ Each component type has specific conditions that represent extraction dangers:
 
 ### Combat Example: Hindered Dragon
 
-**Setup:** Dragon's wing was hindered during combat
-**Opportunity:** Wing membrane [Flight] is now exposed and damaged
-**Action:** Spend 2 actions on Combat Harvesting
-**Check:** Survival vs DC 36 (14 + 20 + 2 for combat conditions)
-**Risk:** If critical failure, dragon gets opportunity attack
-**Reward:** Immediate [Flight 20] component worth significant value
+- **Setup:** Dragon's wing was hindered during combat
+- **Opportunity:** Wing membrane [Flight] is now exposed and damaged
+- **Action:** Spend 2 actions on Combat Harvesting
+- **Check:** Survival vs DC 36 (14 + 20 + 2 for combat conditions)
+- **Risk:** If critical failure, dragon gets opportunity attack
+- **Reward:** Immediate [Flight 20] component worth significant value
 
 ---
 
