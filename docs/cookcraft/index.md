@@ -1,4 +1,3 @@
-Here are the Cookcraft pages
+Here are the HarvestCraft pages
 
-- [Rules](cc_rules)
-- [Essence Powers - Quick Reference](cc_essence_powers_qr)
+- [Rules](hc_rules)
