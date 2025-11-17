@@ -5,10 +5,10 @@ This maps the process of acquiring, and using, components known as Essences to c
 
 So far it consists of:
 - Hindercraft
-- [Harvestcraft](docs/HarvestCraft_SubSystem)
+- [Harvestcraft](docs/harvestcraft/hc_rules)
 - Distillcraft
 - Forgecraft
-- [Cookcraft](docs/CookCraft_SubSystem)
+- [Cookcraft](docs/cookcraft/cc_rules)
 
 Future subsystems will include:
 - Distillcraft
