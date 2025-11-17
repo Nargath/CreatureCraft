@@ -16,7 +16,8 @@ Future subsystems will include:
 - Distillcraft
 - Brewcraft
 
-There's also documentation on the base rules and the design philosophy
+There's also documentation on the base rules and the design philosophy:
+
 - [Tag System Framework](/philosophy_design/tag_system_Framework)
 - [Design Philosophy](/philosophy_design/design_philosophy)
 - [Special Tags List](/philosophy_design/special_tags_list)
