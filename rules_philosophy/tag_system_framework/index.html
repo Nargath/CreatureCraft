@@ -1,0 +1,2040 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Nargath">
+      
+      
+        <link rel="canonical" href="https://nargath.github.io/CreatureCraft/rules_philosophy/tag_system_framework/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../design_philosophy/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Tag System Framework - CreatureCraft</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tag-system-framework" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="CreatureCraft" class="md-header__button md-logo" aria-label="CreatureCraft" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CreatureCraft
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tag System Framework
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/nargath/CreatureCraft" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CreatureCraft
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../harvestcraft/" class="md-tabs__link">
+          
+  
+  HarvestCraft
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../cookcraft/" class="md-tabs__link">
+          
+  
+  Cookcraft
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  Rules & Philosophy
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CreatureCraft" class="md-nav__button md-logo" aria-label="CreatureCraft" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    CreatureCraft
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/nargath/CreatureCraft" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CreatureCraft
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    HarvestCraft
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            HarvestCraft
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../harvestcraft/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../harvestcraft/hc_rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Cookcraft
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Cookcraft
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cookcraft/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cookcraft/cc_rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cookcraft/cc_essence_powers_qr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Essence Powers (Quick Reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Rules & Philosophy
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Rules & Philosophy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Tag System Framework
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Tag System Framework
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose-of-this-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purpose of This Document
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-mechanical-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Mechanical Rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Mechanical Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rule-1-tag-level-equals-creature-cr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rule 1: Tag Level Equals Creature CR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-2-single-tag-per-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rule 2: Single Tag Per Component
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-3-universal-dc-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rule 3: Universal DC Formula
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tag-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tag Categories
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tag Categories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#special-tags-leveled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Tags (Leveled)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mundane-tags-unleveled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mundane Tags (Unleveled)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mundane-material-yield-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mundane Material Yield System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mundane Material Yield System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quantity-scaling-by-creature-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quantity Scaling by Creature Size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#condition-and-spoilage-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Condition and Spoilage System
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tag-data-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tag Data Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tag Data Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#special-tag-data-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Tag Data Categories
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mundane-tag-data-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mundane Tag Data Categories
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subsystem-integration-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subsystem Integration Specifications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Subsystem Integration Specifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interface-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interface Principles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-consistency-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Consistency Rules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gm-implementation-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      GM Implementation Guidelines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GM Implementation Guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tag-assignment-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tag Assignment Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creature-variety-through-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creature Variety Through Components
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#player-usage-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Usage Guidelines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Player Usage Guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inventory-tracking-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inventory Tracking Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-functionality-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Material Functionality Rules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-in-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      System in Practice
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System in Practice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complete-example-ancient-red-dragon-cr-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Example: Ancient Red Dragon (CR 17)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-flow-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Material Flow Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-subsystem-usage-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cross-Subsystem Usage Patterns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-specifications-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Specifications Summary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Specifications Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-reference-universal-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Reference - Universal Rules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-reference-tag-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Reference - Tag Categories
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-reference-subsystem-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Reference - Subsystem Scaling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-with-pf2e-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration with PF2e Rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integration with PF2e Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bonus-type-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bonus Type Usage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-scale-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time Scale Standards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#action-economy-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Action Economy Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../design_philosophy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Design Philosophy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../special_tags_list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Special Tags List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose-of-this-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purpose of This Document
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-mechanical-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Mechanical Rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Mechanical Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rule-1-tag-level-equals-creature-cr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rule 1: Tag Level Equals Creature CR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-2-single-tag-per-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rule 2: Single Tag Per Component
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rule-3-universal-dc-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rule 3: Universal DC Formula
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tag-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tag Categories
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tag Categories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#special-tags-leveled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Tags (Leveled)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mundane-tags-unleveled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mundane Tags (Unleveled)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mundane-material-yield-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mundane Material Yield System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mundane Material Yield System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quantity-scaling-by-creature-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quantity Scaling by Creature Size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#condition-and-spoilage-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Condition and Spoilage System
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tag-data-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tag Data Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tag Data Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#special-tag-data-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Tag Data Categories
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mundane-tag-data-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mundane Tag Data Categories
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subsystem-integration-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subsystem Integration Specifications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Subsystem Integration Specifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interface-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interface Principles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-consistency-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Consistency Rules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gm-implementation-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      GM Implementation Guidelines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GM Implementation Guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tag-assignment-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tag Assignment Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creature-variety-through-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creature Variety Through Components
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#player-usage-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Player Usage Guidelines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Player Usage Guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inventory-tracking-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inventory Tracking Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-functionality-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Material Functionality Rules
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-in-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      System in Practice
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System in Practice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complete-example-ancient-red-dragon-cr-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Example: Ancient Red Dragon (CR 17)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#material-flow-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Material Flow Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-subsystem-usage-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cross-Subsystem Usage Patterns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-specifications-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Specifications Summary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Specifications Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-reference-universal-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Reference - Universal Rules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-reference-tag-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Reference - Tag Categories
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-reference-subsystem-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Reference - Subsystem Scaling
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-with-pf2e-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration with PF2e Rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integration with PF2e Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bonus-type-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bonus Type Usage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-scale-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time Scale Standards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#action-economy-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Action Economy Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/nargath/CreatureCraft/edit/master/docs/rules_philosophy/tag_system_framework.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="tag-system-framework">Tag System Framework<a class="headerlink" href="#tag-system-framework" title="Permanent link">&para;</a></h1>
+<p><em>Universal mechanical framework for creature components across all subsystems</em></p>
+<hr />
+<h2 id="purpose-of-this-document">Purpose of This Document<a class="headerlink" href="#purpose-of-this-document" title="Permanent link">&para;</a></h2>
+<p>This document defines the <strong>MECHANICAL RULES</strong> that govern how tags work across all subsystems. For design philosophy, rationales, and guiding principles, see the Design Philosophy document.</p>
+<hr />
+<h2 id="core-mechanical-rules">Core Mechanical Rules<a class="headerlink" href="#core-mechanical-rules" title="Permanent link">&para;</a></h2>
+<h3 id="rule-1-tag-level-equals-creature-cr">Rule 1: Tag Level Equals Creature CR<a class="headerlink" href="#rule-1-tag-level-equals-creature-cr" title="Permanent link">&para;</a></h3>
+<p><strong>Specification:</strong> All special tags on a creature are set to the creature's Challenge Rating.</p>
+<p><strong>Examples:</strong>
+- CR 8 Red Dragon Ã¢â€ ' [Fire 8], [Flight 8], [Defense 8], [Sharp 8]
+- CR 15 Ancient Dragon Ã¢â€ ' [Fire 15], [Flight 15], [Defense 15], [Sharp 15]
+- CR 3 Goblin Ã¢â€ ' [Sharp 3], [Defense 3]</p>
+<p><strong>Result:</strong> Uniform scaling across all creature features. No individual power level calculations required.</p>
+<hr />
+<h3 id="rule-2-single-tag-per-component">Rule 2: Single Tag Per Component<a class="headerlink" href="#rule-2-single-tag-per-component" title="Permanent link">&para;</a></h3>
+<p><strong>Specification:</strong> Each harvested component has exactly one special tag.</p>
+<p><strong>Examples:</strong>
+- Dragon Teeth Ã¢â€ ' [Sharp 15] only
+- Dragon Fire Glands Ã¢â€ ' [Fire 15] only
+- Dragon Scales Ã¢â€ ' [Defense 15] only</p>
+<p><strong>Result:</strong> Variety comes from different components, not multiple tags per component. Simplifies tracking and prevents stacking issues.</p>
+<hr />
+<h3 id="rule-3-universal-dc-formula">Rule 3: Universal DC Formula<a class="headerlink" href="#rule-3-universal-dc-formula" title="Permanent link">&para;</a></h3>
+<p><strong>Specification:</strong> All subsystems use the same difficulty class calculation.</p>
+<p><strong>Formula:</strong> DC = 14 + Tag Level + Difficulty Modifier</p>
+<p><strong>Components:</strong>
+- <strong>14:</strong> PF2e standard DC baseline
+- <strong>Tag Level:</strong> Creature's Challenge Rating (automatic scaling)
+- <strong>Difficulty Modifier:</strong> Task-specific adjustment</p>
+<p><strong>Difficulty Modifiers:</strong>
+- <strong>Normal:</strong> +0
+- <strong>Hard:</strong> +2
+- <strong>Very Hard:</strong> +5
+- <strong>Incredibly Hard:</strong> +10</p>
+<p><strong>Modifier Sources:</strong>
+- <strong>HinderCraft &amp; HarvestCraft:</strong> Determined by creature properties (e.g., ancient dragon = Very Hard = +5)
+- <strong>CookCraft &amp; ForgeCraft:</strong> Determined by recipe/enhancement complexity</p>
+<p><strong>Examples:</strong>
+- Hellhound [Fire 3]: Base DC 17, Normal task DC 17, Hard task DC 19
+- Ancient Dragon [Fire 17]: Base DC 31, Very Hard task DC 36</p>
+<hr />
+<h2 id="tag-categories">Tag Categories<a class="headerlink" href="#tag-categories" title="Permanent link">&para;</a></h2>
+<h3 id="special-tags-leveled">Special Tags (Leveled)<a class="headerlink" href="#special-tags-leveled" title="Permanent link">&para;</a></h3>
+<p><strong>Definition:</strong> Represent extraordinary creature abilities with power scaling. Level equals creature CR.</p>
+<p><strong>Characteristics:</strong>
+- Level determines DC and effect potency/duration
+- Used across multiple subsystems (HinderCraft, HarvestCraft, CookCraft, ForgeCraft)
+- Provide enhanced capabilities and magical effects</p>
+<p><strong>Tag Format:</strong> [TagName X] where X = Creature CR</p>
+<p><strong>Examples:</strong>
+- [Fire 12] - Fire-based component from CR 12 creature
+- [Venom 5] - Venom from CR 5 creature
+- [Sharp 20] - Natural weapon from CR 20 creature</p>
+<p><strong>Complete Special Tags List:</strong>
+See special_tags_list.md for comprehensive list of all 39 special tags.</p>
+<hr />
+<h3 id="mundane-tags-unleveled">Mundane Tags (Unleveled)<a class="headerlink" href="#mundane-tags-unleveled" title="Permanent link">&para;</a></h3>
+<p><strong>Definition:</strong> Represent basic biological materials for survival and standard crafting. No level scaling.</p>
+<p><strong>Characteristics:</strong>
+- No level value (quantity determined by creature size, not CR)
+- Support survival gameplay and economic activities
+- Functionality tracked by tag presence/absence</p>
+<p><strong>Tag Format:</strong> [TagName] (no level number)</p>
+<p><strong>Standard Mundane Tags:</strong>
+- [Meat] - Protein sources, cooking ingredients
+- [Hide] - Leather goods, basic armor materials
+- [Bone] - Tools, structural materials
+- [Fat] - Cooking oils, weatherproofing, lubricants
+- [Organs] - Specialized internal organs
+- [Blood] - Non-magical blood for various applications
+- [Scale] - Non-magical scales and protective plates
+- [Feather] - Flight feathers and down (mundane varieties)
+- [Fur] - Pelts and fur materials
+- [Sinew] - Tendons and binding materials</p>
+<hr />
+<h2 id="mundane-material-yield-system">Mundane Material Yield System<a class="headerlink" href="#mundane-material-yield-system" title="Permanent link">&para;</a></h2>
+<h3 id="quantity-scaling-by-creature-size">Quantity Scaling by Creature Size<a class="headerlink" href="#quantity-scaling-by-creature-size" title="Permanent link">&para;</a></h3>
+<p><strong>Formula:</strong> Base Yield Ãƒâ€” Size Multiplier</p>
+<p><strong>Size Multipliers:</strong>
+- <strong>Tiny:</strong> 0.1Ãƒâ€”
+- <strong>Small:</strong> 0.5Ãƒâ€”
+- <strong>Medium:</strong> 1Ãƒâ€” (baseline)
+- <strong>Large:</strong> 3Ãƒâ€”
+- <strong>Huge:</strong> 5Ãƒâ€”
+- <strong>Gargantuan:</strong> 10Ãƒâ€”</p>
+<p><strong>Example - Dragon Meat:</strong>
+- Medium creature: 2 Bulk meat
+- Gargantuan dragon: 20 Bulk meat (2 Ãƒâ€” 10)</p>
+<p><strong>Key Principle:</strong> Volume scales with size, not quality. A Tiny wolf and a Gargantuan wolf both provide [Meat] with identical functionality - just different quantities.</p>
+<hr />
+<h3 id="condition-and-spoilage-system">Condition and Spoilage System<a class="headerlink" href="#condition-and-spoilage-system" title="Permanent link">&para;</a></h3>
+<p><strong>Condition States:</strong>
+- <strong>Fresh:</strong> Full functionality, all tags present
+- <strong>Preserved:</strong> Extended shelf life, maintains tags
+- <strong>Spoiled:</strong> Non-functional, tags lost</p>
+<p><strong>Mechanical Rule:</strong> Tag presence determines functionality. Condition descriptors are narrative.</p>
+<p><strong>Examples:</strong>
+- "Fresh Dragon Meat [Meat]" Ã¢â€ ' Functional for cooking
+- "Preserved Dragon Meat [Meat]" Ã¢â€ ' Functional for cooking
+- "Spoiled Dragon Meat" (no [Meat] tag) Ã¢â€ ' Unusable in recipes</p>
+<p><strong>Spoilage Timing:</strong>
+Determined by GM based on climate, storage, and preservation methods. Standard fantasy adventuring assumption: special components last 1 week, mundane materials last 3 days without preservation.</p>
+<hr />
+<h2 id="tag-data-structure">Tag Data Structure<a class="headerlink" href="#tag-data-structure" title="Permanent link">&para;</a></h2>
+<p>Each tag contains standardized data that all subsystems can reference independently:</p>
+<h3 id="special-tag-data-categories">Special Tag Data Categories<a class="headerlink" href="#special-tag-data-categories" title="Permanent link">&para;</a></h3>
+<p><strong>HinderCraft Data:</strong>
+- Conditions applied by Target Area attacks
+- Save type (Fortitude/Reflex/Will)
+- Critical hit conditions</p>
+<p><strong>HarvestCraft Data:</strong>
+- Component yield types available
+- Extraction difficulty modifiers
+- Special harvesting requirements
+- Spoilage rules specific to tag type</p>
+<p><strong>CookCraft Data:</strong>
+- Sustenance category effects
+- Enhancement category effects
+- Utility category effects
+- Duration calculation (base time Ãƒâ€” tag level)</p>
+<p><strong>ForgeCraft Data:</strong>
+- Expression path options (Destruction/Protection/Utility/Magic)
+- Tier effects based on tag level ranges
+- Material properties and compatibility
+- Enhancement scaling rules</p>
+<p><strong>Economic Data:</strong>
+- Base value calculations
+- Rarity modifiers by tag level
+- Trade factors and market demand</p>
+<hr />
+<h3 id="mundane-tag-data-categories">Mundane Tag Data Categories<a class="headerlink" href="#mundane-tag-data-categories" title="Permanent link">&para;</a></h3>
+<p><strong>Functionality:</strong>
+- Primary uses and applications
+- Crafting compatibility
+- Cooking applications</p>
+<p><strong>Yield Scaling:</strong>
+- Base yield amounts
+- Size multiplier application
+- Bulk measurements</p>
+<p><strong>Condition Tracking:</strong>
+- Fresh/Preserved/Spoiled state rules
+- Preservation methods available
+- Tag retention conditions</p>
+<p><strong>Spoilage Rules:</strong>
+- Time until spoilage (unpreserved)
+- Environmental factors affecting decay
+- When tags are permanently lost</p>
+<hr />
+<h2 id="subsystem-integration-specifications">Subsystem Integration Specifications<a class="headerlink" href="#subsystem-integration-specifications" title="Permanent link">&para;</a></h2>
+<h3 id="interface-principles">Interface Principles<a class="headerlink" href="#interface-principles" title="Permanent link">&para;</a></h3>
+<p><strong>Independent Data Access:</strong>
+Each subsystem reads tag data without requiring other subsystems:
+- HinderCraft reads combat conditions and save types
+- HarvestCraft reads yield quantities and extraction requirements
+- CookCraft reads consumable effects and duration formulas
+- ForgeCraft reads material properties and enhancement options</p>
+<p><strong>No Cross-Dependencies:</strong>
+Subsystems don't call each other's mechanics. They only share the universal tag data structure.</p>
+<p><strong>Example - [Fire 12] Component:</strong>
+- <strong>HinderCraft:</strong> Reads "Fort save, conditions: Flat-Footed/Sickened"
+- <strong>HarvestCraft:</strong> Reads "Yield: 1-2 fire glands, DC +2 for heat danger"
+- <strong>CookCraft:</strong> Reads "Sustenance: Fire resistance 5, Duration: 1h Ãƒâ€” 12 = 12 hours"
+- <strong>ForgeCraft:</strong> Reads "Available paths: Destruction/Protection/Utility/Magic, Tier 3 effects"</p>
+<p><strong>Result:</strong> Each subsystem functions independently while maintaining consistency.</p>
+<hr />
+<h3 id="data-consistency-rules">Data Consistency Rules<a class="headerlink" href="#data-consistency-rules" title="Permanent link">&para;</a></h3>
+<p><strong>Tag Level Determines Scaling:</strong>
+- [Fire 8] provides consistent baseline power regardless of subsystem context
+- Individual subsystems apply their own difficulty modifiers on top of base DC
+- Effect potency, duration, and value all scale predictably with tag level</p>
+<p><strong>Scaling Patterns by Subsystem:</strong>
+- <strong>HinderCraft:</strong> Tag level determines DC only (no power scaling)
+- <strong>HarvestCraft:</strong> Tag level determines DC only (no yield scaling)
+- <strong>CookCraft:</strong> Tag level determines duration/uses (fixed effect power)
+- <strong>ForgeCraft:</strong> Tag level determines tier access (grouped power scaling)</p>
+<p><strong>Universal Baseline:</strong>
+All subsystems agree that [Fire 12] is more valuable than [Fire 5], but each interprets that value differently according to its purpose.</p>
+<hr />
+<h2 id="gm-implementation-guidelines">GM Implementation Guidelines<a class="headerlink" href="#gm-implementation-guidelines" title="Permanent link">&para;</a></h2>
+<h3 id="tag-assignment-process">Tag Assignment Process<a class="headerlink" href="#tag-assignment-process" title="Permanent link">&para;</a></h3>
+<p><strong>Step 1: Identify Creature Features</strong>
+Review creature's significant abilities:
+- Breath weapons, special attacks
+- Natural weapons (claws, teeth, stingers)
+- Special movement modes
+- Sensory capabilities
+- Defensive features</p>
+<p><strong>Step 2: Assign Tag Types</strong>
+Match features to appropriate tags:
+- Elemental attacks Ã¢â€ ' Corresponding elemental tags
+- Toxins/venoms Ã¢â€ ' [Venom]
+- Natural weapons Ã¢â€ ' [Sharp]
+- Armor/shells Ã¢â€ ' [Defense]
+- Flight/burrow/swim Ã¢â€ ' Movement tags
+- Enhanced senses Ã¢â€ ' [Vision], [Scent], [Sense]</p>
+<p><strong>Step 3: Set All Tags to Creature CR</strong>
+All special tags = Creature's Challenge Rating (no exceptions)</p>
+<p><strong>Step 4: Determine Difficulty Modifiers</strong>
+Assess task complexity based on creature properties:
+- <strong>Ancient dragons, unique creatures:</strong> Very Hard (+5)
+- <strong>Elite monsters, dangerous features:</strong> Hard (+2)
+- <strong>Standard creatures:</strong> Normal (+0)</p>
+<p><strong>Step 5: Identify Mundane Materials</strong>
+Determine which unleveled tags apply:
+- Living creatures Ã¢â€ ' [Meat], [Hide], [Bone], [Blood]
+- Furry creatures Ã¢â€ ' [Fur]
+- Scaled creatures Ã¢â€ ' [Scale]
+- Flying creatures Ã¢â€ ' [Feather]
+- Special organs Ã¢â€ ' [Organs]</p>
+<hr />
+<h3 id="creature-variety-through-components">Creature Variety Through Components<a class="headerlink" href="#creature-variety-through-components" title="Permanent link">&para;</a></h3>
+<p><strong>Multiple Components, Single Tag Each:</strong>
+A single creature provides multiple tag types through different body parts, but each component has exactly one tag.</p>
+<p><strong>Example - Ancient Red Dragon (CR 17):</strong>
+- Fire Breath Glands Ã¢â€ ' [Fire 17]
+- Teeth and Claws Ã¢â€ ' [Sharp 17]
+- Armored Scales Ã¢â€ ' [Defense 17]
+- Wing Membranes Ã¢â€ ' [Flight 17]
+- Enhanced Eyes Ã¢â€ ' [Vision 17] or [Sense 17]
+- Arcane Heart Ã¢â€ ' [Magical 17]
+- Mundane materials: [Meat], [Hide], [Bone], [Blood], [Scale]</p>
+<p><strong>Result:</strong> Rich variety without complex tag combinations.</p>
+<hr />
+<h2 id="player-usage-guidelines">Player Usage Guidelines<a class="headerlink" href="#player-usage-guidelines" title="Permanent link">&para;</a></h2>
+<h3 id="inventory-tracking-options">Inventory Tracking Options<a class="headerlink" href="#inventory-tracking-options" title="Permanent link">&para;</a></h3>
+<p>Players choose how to track components:</p>
+<p><strong>Option 1 - Specific Tracking:</strong>
+- "Ancient Dragon Teeth [Sharp 17]"
+- "Wyvern Venom Sac [Venom 12]"
+- Provides narrative satisfaction and thematic collections</p>
+<p><strong>Option 2 - Generic Tracking:</strong>
+- "[Sharp 17] Components x3"
+- "[Venom 12] Components x2"
+- Streamlined for practical players</p>
+<p><strong>Option 3 - Mixed Approach:</strong>
+- Specific names for themed collections or special projects
+- Generic tracking for bulk materials
+- "Ancient Dragon Teeth [Sharp 17]" for planned sword project
+- "[Fire 8] Components x4" for general use</p>
+<p><strong>System Result:</strong> All three approaches work identically in mechanics. Player choice is purely organizational.</p>
+<hr />
+<h3 id="material-functionality-rules">Material Functionality Rules<a class="headerlink" href="#material-functionality-rules" title="Permanent link">&para;</a></h3>
+<p><strong>Identical Tag Level = Identical Function:</strong>
+All components with the same tag and level work identically in all subsystems:
+- [Fire 12] dragon glands = [Fire 12] elemental core (mechanically)
+- [Sharp 8] owlbear claws = [Sharp 8] razor beetle mandibles (mechanically)</p>
+<p><strong>Tag Presence Determines Usability:</strong>
+- Component with tag Ã¢â€ ' Functional in all systems
+- Spoiled component (no tag) Ã¢â€ ' Unusable
+- Preserved component (tag retained) Ã¢â€ ' Fully functional</p>
+<p><strong>Higher Tag Levels:</strong>
+- Provide access to higher effect tiers (ForgeCraft)
+- Provide longer durations (CookCraft)
+- Require higher skill checks (all systems)
+- May have higher economic value</p>
+<hr />
+<h2 id="system-in-practice">System in Practice<a class="headerlink" href="#system-in-practice" title="Permanent link">&para;</a></h2>
+<h3 id="complete-example-ancient-red-dragon-cr-17">Complete Example: Ancient Red Dragon (CR 17)<a class="headerlink" href="#complete-example-ancient-red-dragon-cr-17" title="Permanent link">&para;</a></h3>
+<p><strong>Special Components Available:</strong>
+| Component | Tag | Base DC |
+|-----------|-----|---------|
+| Fire Glands | [Fire 17] | 31 |
+| Teeth/Claws | [Sharp 17] | 31 |
+| Enhanced Eyes | [Vision 17] | 31 |
+| Wing Membranes | [Flight 17] | 31 |
+| Armored Scales | [Defense 17] | 31 |
+| Arcane Heart | [Magical 17] | 31 |</p>
+<p><strong>Mundane Materials Available:</strong>
+| Material | Tag | Yield (Gargantuan) |
+|----------|-----|--------------------|
+| Meat | [Meat] | 40 Bulk |
+| Hide | [Hide] | 25 Bulk |
+| Scales | [Scale] | 30 Bulk |
+| Bones | [Bone] | 20 Bulk |
+| Blood | [Blood] | 15 Bulk |</p>
+<hr />
+<h3 id="material-flow-example">Material Flow Example<a class="headerlink" href="#material-flow-example" title="Permanent link">&para;</a></h3>
+<p><strong>Step 1 - Collection (HarvestCraft):</strong>
+Player harvests "Ancient Dragon Teeth [Sharp 17]"
+- Base DC: 31 (14 + 17)
+- Creature modifier: Very Hard (+5)
+- Final DC: 36
+- Success: Gain 1 component</p>
+<p><strong>Step 2 - Processing Decision:</strong>
+Player decides to use component for permanent crafting (ForgeCraft)
+- Alternative: Could cook for temporary combat benefit (CookCraft)
+- Strategic choice: Permanent value vs immediate utility</p>
+<p><strong>Step 3 - Crafting Application (ForgeCraft):</strong>
+Create enhanced longsword using Destruction expression path
+- Component: [Sharp 17]
+- Base item: +1 Longsword (Level 4)
+- Expression: Destruction path
+- Tag level 17 = Tier 4 access
+- Item level 4 &lt; Tier 4 requirement (Level 13+)
+- <strong>Limited to Tier 2 effect:</strong> +2 status bonus to damage
+- Base DC: 31 (14 + 17)
+- Complexity: Normal (+0)
+- Final DC: 31
+- Time: 17 days</p>
+<p><strong>Step 4 - System Result:</strong>
+- Tag level drove base DC (31)
+- Item level limitation prevented overpowered combination
+- Component name provided narrative satisfaction
+- Mechanical consistency maintained throughout</p>
+<hr />
+<h3 id="cross-subsystem-usage-patterns">Cross-Subsystem Usage Patterns<a class="headerlink" href="#cross-subsystem-usage-patterns" title="Permanent link">&para;</a></h3>
+<p><strong>Same Component, Different Subsystems:</strong></p>
+<p><strong>[Fire 12] Component Usage Options:</strong></p>
+<p><strong>HinderCraft (Combat):</strong>
+- Target: Breath gland or fire-generating organ
+- DC: 26 (14 + 12 + 0 Normal)
+- Save: Fortitude
+- Effect: Flat-Footed or Sickened 1</p>
+<p><strong>HarvestCraft (Collection):</strong>
+- Target: Fire glands, thermal organs
+- DC: 28 (14 + 12 + 2 Hard extraction)
+- Result: 1-2 [Fire 12] components
+- Risk: 1d6 fire damage on failure</p>
+<p><strong>CookCraft (Temporary Boost):</strong>
+- Sustenance: Fire resistance 5 for 12 hours
+- Enhancement: +2 Reflex saves for 6 hours
+- Utility: Ignite capability for 6 hours
+- DC: 26 (14 + 12)</p>
+<p><strong>ForgeCraft (Permanent Item):</strong>
+- Destruction: +1d6 fire damage (Tier 3)
+- Protection: Fire resistance 8 (Tier 3)
+- Utility: Heat/ignition abilities (Tier 3)
+- Magic: Fire spell capabilities (Tier 3)
+- DC: 26+ (14 + 12 + complexity modifier)
+- Time: 12 days</p>
+<p><strong>Result:</strong> Same component provides value across all subsystems. Player choice determines which benefit to pursue.</p>
+<hr />
+<h2 id="technical-specifications-summary">Technical Specifications Summary<a class="headerlink" href="#technical-specifications-summary" title="Permanent link">&para;</a></h2>
+<h3 id="quick-reference-universal-rules">Quick Reference - Universal Rules<a class="headerlink" href="#quick-reference-universal-rules" title="Permanent link">&para;</a></h3>
+<p><strong>DC Calculation:</strong> 14 + Tag Level + Difficulty Modifier</p>
+<p><strong>Tag Level:</strong> Always equals Creature CR</p>
+<p><strong>Single Tag Rule:</strong> One tag per component</p>
+<p><strong>Difficulty Modifiers:</strong> Normal (+0), Hard (+2), Very Hard (+5), Incredibly Hard (+10)</p>
+<p><strong>Mundane Yield:</strong> Base Yield Ãƒâ€” Size Multiplier</p>
+<p><strong>Size Multipliers:</strong> Tiny (0.1Ãƒâ€”), Small (0.5Ãƒâ€”), Medium (1Ãƒâ€”), Large (3Ãƒâ€”), Huge (5Ãƒâ€”), Gargantuan (10Ãƒâ€”)</p>
+<p><strong>Spoilage Rule:</strong> Tag presence determines functionality</p>
+<p><strong>Component Equivalence:</strong> Same tag + same level = identical function</p>
+<hr />
+<h3 id="quick-reference-tag-categories">Quick Reference - Tag Categories<a class="headerlink" href="#quick-reference-tag-categories" title="Permanent link">&para;</a></h3>
+<p><strong>Special Tags:</strong> Leveled, format [TagName X], X = Creature CR</p>
+<p><strong>Mundane Tags:</strong> Unleveled, format [TagName], quantity by size</p>
+<p><strong>Special Tag Count:</strong> 39 total (see special_tags_list.md)</p>
+<p><strong>Mundane Tag Count:</strong> 10 standard tags (expandable)</p>
+<hr />
+<h3 id="quick-reference-subsystem-scaling">Quick Reference - Subsystem Scaling<a class="headerlink" href="#quick-reference-subsystem-scaling" title="Permanent link">&para;</a></h3>
+<p><strong>HinderCraft:</strong> Tag level Ã¢â€ ' DC only</p>
+<p><strong>HarvestCraft:</strong> Tag level Ã¢â€ ' DC only</p>
+<p><strong>CookCraft:</strong> Tag level Ã¢â€ ' Duration/uses (fixed power)</p>
+<p><strong>ForgeCraft:</strong> Tag level Ã¢â€ ' Tier access (grouped power)</p>
+<hr />
+<h2 id="integration-with-pf2e-rules">Integration with PF2e Rules<a class="headerlink" href="#integration-with-pf2e-rules" title="Permanent link">&para;</a></h2>
+<h3 id="bonus-type-usage">Bonus Type Usage<a class="headerlink" href="#bonus-type-usage" title="Permanent link">&para;</a></h3>
+<p><strong>Item Bonuses:</strong> Used by permanent enhancements (ForgeCraft weapons/armor)</p>
+<p><strong>Circumstance Bonuses:</strong> Used by situational benefits (CookCraft Enhancement, ForgeCraft Protection)</p>
+<p><strong>Status Bonuses:</strong> Used by internal buffs (CookCraft Enhancement, ForgeCraft Destruction)</p>
+<p><strong>Untyped Bonuses:</strong> Avoided (maintain PF2e stacking rules)</p>
+<p><strong>Result:</strong> All bonuses stack appropriately per PF2e rules.</p>
+<hr />
+<h3 id="time-scale-standards">Time Scale Standards<a class="headerlink" href="#time-scale-standards" title="Permanent link">&para;</a></h3>
+<p><strong>Combat Time:</strong>
+- Rounds (6 seconds)
+- Used by: HinderCraft duration, some ForgeCraft combat effects</p>
+<p><strong>Exploration Time:</strong>
+- Minutes (60 seconds)
+- Hours (60 minutes)
+- Used by: HarvestCraft extraction, CookCraft preparation</p>
+<p><strong>Downtime Time:</strong>
+- Days (24 hours)
+- Weeks (7 days)
+- Used by: ForgeCraft crafting, preservation periods</p>
+<p><strong>Result:</strong> Consistent with PF2e time scales.</p>
+<hr />
+<h3 id="action-economy-integration">Action Economy Integration<a class="headerlink" href="#action-economy-integration" title="Permanent link">&para;</a></h3>
+<p><strong>HinderCraft:</strong>
+- Target Area: 2 actions (attack)
+- Hinder Area: Free action (triggered)</p>
+<p><strong>HarvestCraft:</strong>
+- Standard Harvesting: Exploration activity (10 minutes)
+- Combat Harvesting: 2 actions</p>
+<p><strong>CookCraft:</strong>
+- Field Cooking: 30 minutes (exploration)
+- Camp Cooking: 1 hour (downtime)</p>
+<p><strong>ForgeCraft:</strong>
+- Crafting: Days (downtime activity)</p>
+<p><strong>Result:</strong> Each subsystem respects appropriate action economy for its context.</p>
+<hr />
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
+<p>This document provides the mechanical specifications that govern tag behavior across all subsystems. For design rationale, guiding principles, and development philosophy, refer to the Design Philosophy document.</p>
+<p><strong>Key Takeaway:</strong> These rules create a universal language that allows independent subsystems to integrate seamlessly while maintaining their own mechanical identity and design goals.</p>
+<hr />
+<p><em>For philosophical guidance and development principles, see the Design Philosophy document.</em>
+<em>For specific subsystem implementations, see individual subsystem documents.</em>
+<em>For comprehensive tag listing, see special_tags_list.md.</em></p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="November 17, 2025 22:00:36 AEDT">November 17, 2025 22:00:36</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/nargath" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit", "content.metadata"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>

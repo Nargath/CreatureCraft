@@ -1,0 +1,1758 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Nargath">
+      
+      
+        <link rel="canonical" href="https://nargath.github.io/CreatureCraft/rules_philosophy/design_philosophy/">
+      
+      
+        <link rel="prev" href="../tag_system_framework/">
+      
+      
+        <link rel="next" href="../special_tags_list/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Design Philosophy - CreatureCraft</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#creature-crafts-design-philosophy" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="CreatureCraft" class="md-header__button md-logo" aria-label="CreatureCraft" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CreatureCraft
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Design Philosophy
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/nargath/CreatureCraft" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CreatureCraft
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../harvestcraft/" class="md-tabs__link">
+          
+  
+  HarvestCraft
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../cookcraft/" class="md-tabs__link">
+          
+  
+  Cookcraft
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  Rules & Philosophy
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CreatureCraft" class="md-nav__button md-logo" aria-label="CreatureCraft" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    CreatureCraft
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/nargath/CreatureCraft" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CreatureCraft
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    HarvestCraft
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            HarvestCraft
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../harvestcraft/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../harvestcraft/hc_rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Cookcraft
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Cookcraft
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cookcraft/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cookcraft/cc_rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cookcraft/cc_essence_powers_qr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Essence Powers (Quick Reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Rules & Philosophy
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Rules & Philosophy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tag_system_framework/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tag System Framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Design Philosophy
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Design Philosophy
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose-of-this-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purpose of This Document
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fundamental-design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fundamental Design Principles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fundamental Design Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-simplicity-is-paramount" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Simplicity is Paramount
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-narrative-freedom-mechanical-consistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Narrative Freedom, Mechanical Consistency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-universal-language-through-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Universal Language Through Tags
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-player-scaling-is-already-solved" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Player Scaling is Already Solved
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-fixed-effects-variable-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Fixed Effects, Variable Application
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-one-component-one-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. One Component, One Effect
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complexity-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complexity Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Complexity Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7-context-determines-acceptable-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Context Determines Acceptable Complexity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-categories-as-effect-lenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Categories as Effect Lenses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-batch-processing-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Batch Processing Philosophy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource-economy-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resource Economy Philosophy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resource Economy Philosophy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10-the-offcuts-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. The Offcuts Philosophy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-meaningful-choices-not-math-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Meaningful Choices, Not Math Problems
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration Philosophy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integration Philosophy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#12-subsystems-are-modular-but-connected" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Subsystems are Modular but Connected
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-respect-pf2e-foundations" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Respect PF2e Foundations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Guidelines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development Guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-golden-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Golden Rule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#red-flags-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Red Flags to Avoid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Checklist
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-subsystem-vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Future Subsystem Vision
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Future Subsystem Vision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subsystem-identity-spaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subsystem Identity Spaces
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#philosophy-in-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Philosophy in Practice
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Philosophy in Practice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-philosophy-conflicts-with-cool" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Philosophy Conflicts with Cool
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-thoughts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing Thoughts
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../special_tags_list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Special Tags List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose-of-this-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purpose of This Document
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fundamental-design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fundamental Design Principles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fundamental Design Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-simplicity-is-paramount" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Simplicity is Paramount
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-narrative-freedom-mechanical-consistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Narrative Freedom, Mechanical Consistency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-universal-language-through-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Universal Language Through Tags
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-player-scaling-is-already-solved" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Player Scaling is Already Solved
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-fixed-effects-variable-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Fixed Effects, Variable Application
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-one-component-one-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. One Component, One Effect
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complexity-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complexity Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Complexity Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7-context-determines-acceptable-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Context Determines Acceptable Complexity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-categories-as-effect-lenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Categories as Effect Lenses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-batch-processing-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Batch Processing Philosophy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource-economy-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resource Economy Philosophy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resource Economy Philosophy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10-the-offcuts-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. The Offcuts Philosophy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-meaningful-choices-not-math-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Meaningful Choices, Not Math Problems
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integration Philosophy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integration Philosophy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#12-subsystems-are-modular-but-connected" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Subsystems are Modular but Connected
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-respect-pf2e-foundations" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Respect PF2e Foundations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Guidelines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Development Guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-golden-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Golden Rule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#red-flags-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Red Flags to Avoid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Checklist
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-subsystem-vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Future Subsystem Vision
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Future Subsystem Vision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subsystem-identity-spaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subsystem Identity Spaces
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#philosophy-in-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Philosophy in Practice
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Philosophy in Practice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-philosophy-conflicts-with-cool" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Philosophy Conflicts with Cool
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-thoughts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing Thoughts
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/nargath/CreatureCraft/edit/master/docs/rules_philosophy/design_philosophy.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="creature-crafts-design-philosophy">Creature Crafts Design Philosophy<a class="headerlink" href="#creature-crafts-design-philosophy" title="Permanent link">&para;</a></h1>
+<p><em>Core principles, rationales, and lessons for subsystem development</em></p>
+<hr />
+<h2 id="purpose-of-this-document">Purpose of This Document<a class="headerlink" href="#purpose-of-this-document" title="Permanent link">&para;</a></h2>
+<p>This document explains <strong>WHY</strong> we make design decisions, provides guiding principles for future development, and captures lessons learned. For specific mechanical rules and technical specifications, see the Tag System Design document.</p>
+<hr />
+<h2 id="fundamental-design-principles">Fundamental Design Principles<a class="headerlink" href="#fundamental-design-principles" title="Permanent link">&para;</a></h2>
+<h3 id="1-simplicity-is-paramount">1. Simplicity is Paramount<a class="headerlink" href="#1-simplicity-is-paramount" title="Permanent link">&para;</a></h3>
+<p><strong>Core Principle:</strong> Each subsystem should have ONE primary mechanic that can be explained in a single sentence.</p>
+<p><strong>Rationale:</strong> Players should internalize mechanics quickly without constant reference. Complex systems create friction and slow gameplay.</p>
+<p><strong>Examples:</strong>
+- HinderCraft: "Target a feature, apply condition, attempt to hinder"
+- HarvestCraft: "Roll Survival vs DC to extract components"
+- CookCraft: "Component + Category = Effect"
+- ForgeCraft: "Component + Item Type + Expression Path = Enhanced Equipment"</p>
+<p><strong>Complexity Ceiling:</strong> If explaining the mechanic requires multiple conditional statements or extensive examples, it's too complex.</p>
+<p><strong>Why This Matters:</strong> The best subsystem is one that players internalize after using once and never need to reference again.</p>
+<hr />
+<h3 id="2-narrative-freedom-mechanical-consistency">2. Narrative Freedom, Mechanical Consistency<a class="headerlink" href="#2-narrative-freedom-mechanical-consistency" title="Permanent link">&para;</a></h3>
+<p><strong>Core Principle:</strong> Let players describe HOW they do things while keeping WHAT happens mechanically consistent.</p>
+<p><strong>Rationale:</strong> Player creativity and roleplay should flourish without creating mechanical complexity or balance issues.</p>
+<p><strong>Good Example - Food Forms in CookCraft:</strong>
+- Players choose if they make stew, roast, or jerky (narrative freedom)
+- All provide the same mechanical effect (mechanical consistency)
+- Mundane components determine available forms (light mechanical touch)
+- <strong>Result:</strong> Rich roleplay without system complexity</p>
+<p><strong>Bad Example - Recipe Lists:</strong>
+- Different recipes with different DCs for marginal benefits
+- Forces players to optimize rather than roleplay
+- Creates unnecessary lookup requirements
+- <strong>Result:</strong> Math replaces creativity</p>
+<p><strong>Application:</strong> Whenever you're tempted to create mechanical distinctions, ask "Can this be narrative instead?"</p>
+<hr />
+<h3 id="3-universal-language-through-tags">3. Universal Language Through Tags<a class="headerlink" href="#3-universal-language-through-tags" title="Permanent link">&para;</a></h3>
+<p><strong>Core Principle:</strong> All subsystems reference the same tags with consistent meaning. The tag system is sacred.</p>
+<p><strong>Rationale:</strong> A universal language allows subsystems to work together seamlessly without requiring special interaction rules.</p>
+<p><strong>What This Means:</strong>
+- Tags carry their data, not individual subsystem rules
+- Tag interpretation is consistent across all uses
+- New subsystems can be added without redefining existing tags</p>
+<p><strong>Why Universal Language Matters:</strong>
+- Players learn once, apply everywhere
+- Subsystems integrate naturally without special cases
+- Future development builds on solid foundation
+- Cross-referencing is intuitive and predictable</p>
+<hr />
+<h3 id="4-player-scaling-is-already-solved">4. Player Scaling is Already Solved<a class="headerlink" href="#4-player-scaling-is-already-solved" title="Permanent link">&para;</a></h3>
+<p><strong>Core Principle:</strong> PF2e's proficiency system handles character advancement. Don't add extra scaling mechanics.</p>
+<p><strong>Rationale:</strong> PF2e already has elegant level-based progression built in:
+- Character level adds to all checks automatically
+- Proficiency ranks (Trained/Expert/Master/Legendary) provide clear advancement
+- A level 15 Master is vastly better than a level 5 Trained character</p>
+<p><strong>Don't Add:</strong>
+- Extra scaling mechanics
+- Level-based bonuses beyond PF2e standard
+- Artificial progression systems
+- "Unlock" mechanics tied to character level</p>
+<p><strong>Why This Matters:</strong> Adding redundant scaling creates complexity without value. Trust PF2e's existing progression.</p>
+<hr />
+<h3 id="5-fixed-effects-variable-application">5. Fixed Effects, Variable Application<a class="headerlink" href="#5-fixed-effects-variable-application" title="Permanent link">&para;</a></h3>
+<p><strong>Core Principle:</strong> Effect magnitude should be predictable and fixed. Variation comes from duration, uses, or scope - not power.</p>
+<p><strong>Rationale:</strong> Power scaling with tag level breaks balance and creates unpredictable outcomes. Fixed effects are easier to balance and mentally track.</p>
+<p><strong>Effects Should Be Predictable:</strong>
+- Fire Resistance 5 is always Fire Resistance 5
+- +1d6 damage is always +1d6 damage
+- +2 circumstance bonus is always +2 circumstance bonus</p>
+<p><strong>Variation Comes From:</strong>
+- Duration (tag level Ãƒâ€” time unit)
+- Number of uses/charges
+- What conditions can be affected (up to tag level)
+- How many people can benefit</p>
+<p><strong>Never:</strong> Scale power directly with tag level (Fire Resistance = tag level breaks balance)</p>
+<p><strong>Exception - Permanent Crafting Systems:</strong>
+Forgecraft deliberately breaks this rule for permanent items through tier grouping (not continuous scaling). This is a conscious, justified exception because:
+- Permanent items deserve different treatment than temporary consumables
+- Multi-day crafting investment should yield impressive results
+- Item level gating provides balance safeguards
+- Tier structure maintains some predictability</p>
+<p><strong>Critical Note:</strong> This exception is ONLY for permanent item crafting. Temporary systems (CookCraft, BrewCraft) must maintain fixed effects.</p>
+<hr />
+<h3 id="6-one-component-one-effect">6. One Component, One Effect<a class="headerlink" href="#6-one-component-one-effect" title="Permanent link">&para;</a></h3>
+<p><strong>Core Principle:</strong> Adding more components doesn't enhance effects. Each component provides one distinct benefit.</p>
+<p><strong>Rationale:</strong> Prevents "god item" optimization problems and keeps resource math simple.</p>
+<p><strong>What This Prevents:</strong>
+- "God meal" combining [Fire 5] + [Fire 5] + [Sharp 3] for super-effects
+- Complex calculations pooling tag levels
+- Analysis paralysis over optimal combinations</p>
+<p><strong>Multiple Components Can:</strong>
+- Make multiple separate items/meals
+- Feed more people (split duration/uses among servings)
+- Provide backup for crafting failures</p>
+<p><strong>Why This Matters:</strong> Maintains resource value, prevents optimization spirals, keeps gameplay fluid.</p>
+<hr />
+<h2 id="complexity-management">Complexity Management<a class="headerlink" href="#complexity-management" title="Permanent link">&para;</a></h2>
+<h3 id="7-context-determines-acceptable-complexity">7. Context Determines Acceptable Complexity<a class="headerlink" href="#7-context-determines-acceptable-complexity" title="Permanent link">&para;</a></h3>
+<p><strong>Core Principle:</strong> The amount of complexity acceptable depends on when the mechanic is used.</p>
+<p><strong>Combat/Active Systems (Keep Simple):</strong>
+- Used under time pressure
+- Need instant resolution
+- Decision paralysis is deadly
+- Example: HinderCraft's two-action attack</p>
+<p><strong>Exploration Systems (Moderate Complexity Okay):</strong>
+- Used during travel/exploration
+- Some deliberation time available
+- Can handle meaningful choices
+- Example: HarvestCraft's component selection</p>
+<p><strong>Downtime Systems (Can Be Complex):</strong>
+- Used during rest/town time
+- Players have full deliberation time
+- Can support deeper decision trees
+- Examples: CookCraft's category selection, ForgeCraft's expression paths</p>
+<p><strong>Why This Matters:</strong> Match complexity to available decision time. Don't make players do math in initiative order.</p>
+<hr />
+<h3 id="8-categories-as-effect-lenses">8. Categories as Effect Lenses<a class="headerlink" href="#8-categories-as-effect-lenses" title="Permanent link">&para;</a></h3>
+<p><strong>Core Principle:</strong> Same component + different category = different effect. This is an elegant solution for player choice.</p>
+<p><strong>Rationale:</strong> Provides meaningful player agency without creating extensive recipe lists or complex interactions.</p>
+<p><strong>What This Provides:</strong>
+- Player choice without complexity
+- Clear mechanical outcomes
+- Component reusability
+- No need for extensive recipe memorization</p>
+<p><strong>Example - [Fire] Component:</strong>
+- Sustenance: Fire resistance (environmental protection)
+- Enhancement: +2 Reflex saves (combat performance)
+- Utility: Ignite capability (special ability)</p>
+<p><strong>Pattern Recognition:</strong> This works because each category asks "How do I want to USE this essence?" rather than "What CAN I make?"</p>
+<p><strong>Why This Matters:</strong> One simple decision (choose category) replaces dozens of specific recipes while maintaining player agency.</p>
+<hr />
+<h3 id="9-batch-processing-philosophy">9. Batch Processing Philosophy<a class="headerlink" href="#9-batch-processing-philosophy" title="Permanent link">&para;</a></h3>
+<p><strong>Core Principle:</strong> Batching should be either dead simple or non-existent.</p>
+<p><strong>Rationale:</strong> Complex batching rules create mid-game calculation overhead and slow play.</p>
+<p><strong>Simple Batching (Acceptable):</strong>
+- Split duration among servings (total duration ÃƒÂ· people)
+- +2 DC per extra serving (universal rule)
+- Clear restrictions on what can/can't be batched</p>
+<p><strong>Complex Batching (Avoid):</strong>
+- Pooling multiple different tag levels
+- Fractional efficiency calculations
+- Conditional modifiers based on combinations</p>
+<p><strong>Why This Matters:</strong> If players need to do math during prep time, they'll avoid the system entirely.</p>
+<hr />
+<h2 id="resource-economy-philosophy">Resource Economy Philosophy<a class="headerlink" href="#resource-economy-philosophy" title="Permanent link">&para;</a></h2>
+<h3 id="10-the-offcuts-philosophy">10. The Offcuts Philosophy<a class="headerlink" href="#10-the-offcuts-philosophy" title="Permanent link">&para;</a></h3>
+<p><strong>Core Principle:</strong> CookCraft uses "leftover" components that players aren't saving for other purposes. All other crafting systems work at ALL levels.</p>
+<p><strong>What Are Offcuts:</strong>
+- Components players have forgotten about in inventory
+- Low-level components that seem "beneath" current party level
+- Excess components when you have too many of one type
+- Random encounter materials not worth saving for projects
+- The third [Fire 5] when you only needed two for weapon crafting</p>
+<p><strong>The Resource Hierarchy:</strong>
+- <strong>ForgeCraft:</strong> Works at any level to make permanent items (Level 1 party makes +1 weapons with [Sharp 3])
+- <strong>BrewCraft:</strong> Works at any level for potions and alchemical items
+- <strong>CookCraft:</strong> Gets the "leftovers" - still valuable, but chosen last</p>
+<p><strong>Natural Resource Decisions Created:</strong>
+- "Should I save this [Fire 8] for a permanent sword?"
+- "Or just cook it for tomorrow's dungeon?"
+- "I have six [Fire 3] components... might as well cook some"</p>
+<p><strong>Why This Matters:</strong> Creates natural strategic decisions without artificial level gating. CookCraft gives value to components that would otherwise rot in inventory, while other crafting systems remain viable and important at all levels.</p>
+<hr />
+<h3 id="11-meaningful-choices-not-math-problems">11. Meaningful Choices, Not Math Problems<a class="headerlink" href="#11-meaningful-choices-not-math-problems" title="Permanent link">&para;</a></h3>
+<p><strong>Core Principle:</strong> Design for strategic decisions, not optimization calculations.</p>
+<p><strong>Good Choice Examples:</strong>
+- "Do I use [Fire 5] for immediate combat benefit or save it for permanent crafting?"
+- "Do I prepare Sustenance (all-day protection) or Enhancement (better combat performance)?"
+- "Do I harvest rare components or get moving before reinforcements arrive?"</p>
+<p><strong>Bad Choice Examples:</strong>
+- "If I use 3Ãƒâ€”[Fire 5] with 2Ãƒâ€”[Meat] and 1Ãƒâ€”[Fat], what's my DC modifier?"
+- "Should I split this across 4.3 servings for optimal efficiency?"
+- "Let me calculate the exact value-per-tag-level optimization curve..."</p>
+<p><strong>Eliminate Mid-Game Calculations:</strong>
+- No pooling different tag levels
+- No fractional multipliers
+- No conditional modifiers based on combinations
+- No lookup tables during play</p>
+<p><strong>Why This Matters:</strong> Math problems during play kill momentum and fun. Strategic decisions create engagement and player investment.</p>
+<hr />
+<h2 id="integration-philosophy">Integration Philosophy<a class="headerlink" href="#integration-philosophy" title="Permanent link">&para;</a></h2>
+<h3 id="12-subsystems-are-modular-but-connected">12. Subsystems are Modular but Connected<a class="headerlink" href="#12-subsystems-are-modular-but-connected" title="Permanent link">&para;</a></h3>
+<p><strong>Core Principle:</strong> Each subsystem must function independently while enhancing others when combined.</p>
+<p><strong>What "Modular" Means:</strong>
+- Works without requiring other subsystems
+- Has complete internal logic
+- Can be added or removed from campaigns
+- Teaches its own mechanics clearly</p>
+<p><strong>What "Connected" Means:</strong>
+- Shares universal tag language
+- Creates synergies when combined
+- Respects resource economy across systems
+- Provides value to other subsystem outputs</p>
+<p><strong>Example Flow:</strong>
+- HinderCraft makes harvesting easier (optional synergy)
+- HarvestCraft provides components (required input for crafting)
+- CookCraft uses components (independent choice)
+- All three work alone, all three work better together</p>
+<p><strong>Why This Matters:</strong> GMs can adopt subsystems gradually. Players can engage with what interests them. The system scales to table preferences.</p>
+<hr />
+<h3 id="13-respect-pf2e-foundations">13. Respect PF2e Foundations<a class="headerlink" href="#13-respect-pf2e-foundations" title="Permanent link">&para;</a></h3>
+<p><strong>Core Principle:</strong> Build on PF2e's existing systems rather than replacing them.</p>
+<p><strong>What This Means:</strong>
+- Use existing bonus types correctly (item, circumstance, status)
+- Respect action economy and time scales
+- Use standard time intervals (1 minute, 10 minutes, 1 hour)
+- Follow condition and trait rules
+- Maintain bounded accuracy</p>
+<p><strong>Don't Invent:</strong>
+- New bonus types when existing ones work
+- New conditions when PF2e has equivalents
+- Non-standard durations (73 minutes)
+- Alternative action economy</p>
+<p><strong>Why This Matters:</strong> Players already know PF2e. Building on familiar foundations reduces learning curve and prevents conflicts with existing rules.</p>
+<hr />
+<h2 id="development-guidelines">Development Guidelines<a class="headerlink" href="#development-guidelines" title="Permanent link">&para;</a></h2>
+<h3 id="the-golden-rule">The Golden Rule<a class="headerlink" href="#the-golden-rule" title="Permanent link">&para;</a></h3>
+<p><strong>When in doubt, choose the simpler option.</strong></p>
+<p><strong>Rationale:</strong> Complexity must be justified by creating meaningful player choice that couldn't exist otherwise. Every additional rule, modifier, or decision point needs to earn its place by significantly improving the play experience.</p>
+<p><strong>Test for Complexity:</strong>
+- Can this be narrative instead of mechanical?
+- Does this create meaningful choice or just more math?
+- Will players remember this after using it once?
+- Could we achieve 80% of this with 20% of the rules?</p>
+<hr />
+<h3 id="red-flags-to-avoid">Red Flags to Avoid<a class="headerlink" href="#red-flags-to-avoid" title="Permanent link">&para;</a></h3>
+<p><strong>Complexity Creep:</strong>
+- Multiple components with different calculations
+- Conditional modifiers based on combinations
+- Scaling that requires lookup tables
+- More than one primary resource type per subsystem</p>
+<p><strong>Mathematical Gymnastics:</strong>
+- Division during play (except simple halving)
+- Multiplication beyond Ãƒâ€”2
+- Adding multiple different tag levels together
+- Percentage calculations
+- Fractional multipliers</p>
+<p><strong>Artificial Restrictions:</strong>
+- "Must learn recipe first" (gates player agency)
+- "Only works with matched tag levels" (creates frustration)
+- "Requires specific component combinations" (forces optimization)
+- "Limited uses per day" (adds tracking burden)</p>
+<p><strong>Power Scaling Traps:</strong>
+- Effects that scale continuously with tag level (breaks balance)
+- Stacking same-type components (god item problem)
+- Multiplicative power increases (exponential problems)
+- Breaking bounded accuracy (PF2e core principle)</p>
+<hr />
+<h3 id="development-checklist">Development Checklist<a class="headerlink" href="#development-checklist" title="Permanent link">&para;</a></h3>
+<p>When creating or modifying a subsystem, verify:</p>
+<p><strong>Simplicity Check:</strong>
+- [ ] Can the core mechanic be explained in one sentence?
+- [ ] Are there 3 or fewer primary decision points?
+- [ ] Can a player use it correctly after one example?
+- [ ] Does it avoid mid-game calculations?</p>
+<p><strong>Balance Check:</strong>
+- [ ] Do effects use fixed values (not scaled by tag level)?
+- [ ] Is component power consistent across subsystems?
+- [ ] Are time requirements appropriate to the activity?
+- [ ] Do failure consequences block activity without spiraling?</p>
+<p><strong>Integration Check:</strong>
+- [ ] Uses universal tag system correctly?
+- [ ] Respects PF2e rules and conventions?
+- [ ] Works alone but enhances other subsystems?
+- [ ] Clear role in resource economy?</p>
+<p><strong>Narrative Check:</strong>
+- [ ] Players have creative freedom in description?
+- [ ] Mechanical outcomes remain consistent?
+- [ ] Forms/methods are narrative, not mechanical?
+- [ ] No artificial recipe or knowledge gates?</p>
+<hr />
+<h2 id="future-subsystem-vision">Future Subsystem Vision<a class="headerlink" href="#future-subsystem-vision" title="Permanent link">&para;</a></h2>
+<h3 id="subsystem-identity-spaces">Subsystem Identity Spaces<a class="headerlink" href="#subsystem-identity-spaces" title="Permanent link">&para;</a></h3>
+<p>Each future subsystem should occupy a distinct niche in the resource economy:</p>
+<p><strong>ForgeCraft (Permanent Items):</strong>
+- Creates lasting equipment at ANY level
+- Longer time investment (days of downtime)
+- Can support more complexity (downtime activity)
+- Conscious exception to power scaling rule (tiered, not continuous)</p>
+<p><strong>BrewCraft (Alchemy/Potions):</strong>
+- Bottled effects that can be stored
+- Works at all levels like other systems
+- Medium duration effects
+- Bridge between temporary cooking and permanent forging</p>
+<p><strong>RuneCraft/EnchantCraft (Enchantment):</strong>
+- Adds properties to existing equipment
+- Works at any level (minor runes from low tags, major from high tags)
+- Requires existing items + components
+- Most complex acceptable (pure downtime)</p>
+<p><strong>LoorCraft (Research/Knowledge):</strong>
+- Study components to unlock creature knowledge
+- Provides tactical advantages and discovery
+- Knowledge generation rather than item creation</p>
+<p><strong>Key Principle:</strong> Each should maintain distinct identity while respecting core philosophy. All work at every level of play, but players make strategic decisions about which system gets which components based on current needs.</p>
+<hr />
+<h2 id="philosophy-in-practice">Philosophy in Practice<a class="headerlink" href="#philosophy-in-practice" title="Permanent link">&para;</a></h2>
+<h3 id="when-philosophy-conflicts-with-cool">When Philosophy Conflicts with Cool<a class="headerlink" href="#when-philosophy-conflicts-with-cool" title="Permanent link">&para;</a></h3>
+<p><strong>Question:</strong> "I have this really cool idea, but it breaks one of the principles. What do I do?"</p>
+<p><strong>Answer:</strong> Test it, but be ruthlessly honest about results.</p>
+<p><strong>Evaluation Process:</strong>
+1. <strong>Identify the conflict</strong> - Which principle does it break? Why?
+2. <strong>Justify the exception</strong> - What does this idea provide that can't exist within the principle?
+3. <strong>Test thoroughly</strong> - Does it actually create meaningful choice or just complexity?
+4. <strong>Be ready to simplify</strong> - If testing shows problems, simplify ruthlessly
+5. <strong>Document the exception</strong> - If kept, explain WHY this specific exception exists</p>
+<p><strong>Example - ForgeCraft Power Scaling:</strong>
+- <strong>Conflict:</strong> Breaks Principle 5 (Fixed Effects, Variable Application)
+- <strong>Justification:</strong> Permanent items deserve power progression, multi-day investment should feel impactful
+- <strong>Safeguards:</strong> Item level gating, tier grouping (not continuous), bounded accuracy respected
+- <strong>Result:</strong> Conscious, documented exception that enhances rather than undermines system</p>
+<hr />
+<h2 id="closing-thoughts">Closing Thoughts<a class="headerlink" href="#closing-thoughts" title="Permanent link">&para;</a></h2>
+<p>These principles exist to maintain consistency and quality, not to stifle creativity. When you have a genuinely innovative idea that challenges these guidelines, test it thoroughly. But remember:</p>
+<p><strong>The best subsystem is one that players internalize after using once and never need to reference again.</strong></p>
+<p>If your design requires players to constantly check rules, it needs simplification. If it creates meaningful choice with minimal overhead, you're on the right track.</p>
+<p>Trust the philosophy. Test thoroughly. Simplify ruthlessly.</p>
+<hr />
+<p><em>For specific mechanical rules, DC calculations, tag structures, and technical specifications, see the Tag System Design document.</em></p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="November 17, 2025 22:00:36 AEDT">November 17, 2025 22:00:36</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/nargath" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.action.edit", "content.metadata"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
