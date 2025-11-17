@@ -17,5 +17,6 @@ Future subsystems will include:
 - Brewcraft
 
 There's also documentation on the base rules and the design philosophy
-[Design Philosophy](/philosophy_design/design_philosophy)
-[Tag System Design](/philosophy_design/tag_system_design)
+- [Tag System Framework](/philosophy_design/tag_system_Framework)
+- [Design Philosophy](/philosophy_design/design_philosophy)
+- [Special Tags List](/philosophy_design/special_tags_list)
