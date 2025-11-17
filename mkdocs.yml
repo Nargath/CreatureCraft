@@ -49,7 +49,9 @@ nav:
       - Overview: cookcraft/index.md
       - Rules: cookcraft/cc_rules.md
       - Essence Powers (Quick Reference): cookcraft/cc_essence_powers_qr.md
-
+  - Philosophy & Design:
+      - Design Philosophy: design_philosophy/design_philosophy.md
+      - Tag System Design: design_philosophy/tag_system_design.md
 
 # === Markdown extensions ===
 markdown_extensions:
